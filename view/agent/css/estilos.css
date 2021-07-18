@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  z-index: 1;
+}
+
+header .contenedor_logo_menu {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(0, 29, 70, 0.4);
+  margin-bottom: 50px;
+}
+
+header .contenedor_logo_menu .logo a {
+  display: block;
+}
+
+header .contenedor_logo_menu .logo a img {
+  vertical-align: top;
+}
+
+header .contenedor_logo_menu .menu {
+  text-align: right;
+  line-height: 50px;
+}
+
+header .contenedor_logo_menu .menu a {
+  color: #000000;
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.main .historial {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.main .historial .titulo-principal {
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #001D46;
+  margin-bottom: 50px;
+}
+
+.main .historial .table {
+  text-align: center;
+}
+
+.main .historial .table .titulos {
+  text-align: center;
+  font-family: 'Alegreya', serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #001D46;
+}
+
+.main .historial .form_search {
+  margin-bottom: 40px;
+  border-radius: 30px;
+  background: initial;
+}
+
+.main .historial .form_search .input_form {
+  text-align: center;
+  background: #fff;
+}
+
+.main .historial .contenedor-btns {
+  text-align: center;
+}
+
+.main .historial .contenedor-btns .detalle {
+  border-radius: 5px;
+  border: 2px solid #001D46;
+  color: #001D46;
+  padding: 5px 0;
+  font-weight: 500;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.main .historial .contenedor-btns .detalle:hover {
+  text-decoration: none;
+  background: #012557;
+  color: #ffffff;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+footer {
+  padding: 25px 0;
+  background: #001D46;
+  text-align: center;
+}
+
+footer .titulo {
+  text-align: center;
+  font-family: 'Alegreya', serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+footer .logo {
+  margin-right: 24px;
+}
+
+footer .menu {
+  text-align: center;
+}
+
+footer .menu a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+footer .numero {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1100px) {
+  header .contenedor_logo_menu .menu a {
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .contenedor_logo_menu .logo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  header .contenedor_logo_menu .menu {
+    text-align: center;
+  }
+  header .contenedor_logo_menu .menu a {
+    margin: 0px 20px;
+  }
+  .main .descripcion_pagina .texto {
+    font-size: 16px;
+  }
+  .main .descripcion_pagina .texto .titulo {
+    font-size: 2.5em;
+  }
+  .main .descripcion_pagina .descripcion {
+    margin-bottom: 50px;
+  }
+  .main .descripcion_pagina .descripcion .sub_parrafo {
+    font-size: 1.5em;
+  }
+  .main .descripcion_pagina .foto,
+  .main .descripcion_pagina .foto_denuncia {
+    display: none;
+  }
+  .main .conoce-mas {
+    padding: 50px 0;
+    background: #EFF5FE;
+  }
+  .main .conoce-mas .informacion .recuadro {
+    margin-bottom: 40px;
+  }
+  .main .conoce-mas .informacion .recuadro .texto {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .main .estadisticas {
+    padding: 50px;
+  }
+  .main .estadisticas .estadistica {
+    margin-bottom: 60px;
+  }
+  .main .cais-quindio {
+    padding: 50px 0;
+    background: #EFF5FE;
+  }
+  .main .cais-quindio .ubicacion {
+    margin-bottom: 40px;
+  }
+  footer .convenio {
+    margin-bottom: 20px;
+  }
+  footer .menu {
+    margin-bottom: 20px;
+  }
+  footer .menu a {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

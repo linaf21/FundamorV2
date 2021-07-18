@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
-  <title>Historial</title>
+  <title>Casos asignados</title>
 </head>
 
 <body>
@@ -23,12 +23,13 @@
 
         <div class="row">
           <div class="col-md-12">
-            <h3 class="titulo-principal">Historial</h3>
+            <h3 class="titulo-principal">Casos asignados</h3>
           </div>
         </div>
 
         <form class = "form_search">  
-             <input class="input_form" type = "text" name = "busqueda" id = "busqueda" placeholder = "Buscar historial" required size="45">
+             <input class="input_form" type = "text" name = "busqueda" id = "busqueda" 
+             placeholder = "Buscar casos asignados" required size="45">
         </form>
 
         <div class="row">
@@ -56,7 +57,7 @@
                 </tr>
               </tbody>
             </table>
-           <!-- Contenedor de los botones de navegacion -->
+            <!-- Contenedor de los botones de navegacion -->
            <div class="contenedor-btns">
               <a class="boton detalle" id="btn-detalle" href="#">Ver detalle</a>
           </div>
@@ -66,9 +67,7 @@
     </section>
 </section>
 
-  
-  
-  <footer></footer>
+<footer></footer>
 
   <!-- Vue.js 2.5.16 -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>

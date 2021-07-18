@@ -29,6 +29,10 @@
           </div>
         </div>
 
+        <form class = "form_search">  
+             <input class="input_form" type = "text" name = "busqueda" id = "busqueda" placeholder = "Buscar historial" required size="45">
+        </form>
+
         <div class="row">
 
           <div class="table-responsive col-12">

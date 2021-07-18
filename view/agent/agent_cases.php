@@ -42,8 +42,7 @@
                   <th scope="col">Fecha</th>
                   <th scope="col">Municipio</th>
                   <th scope="col">Dirección</th>
-                  <th scope="col">Detalle</th>
-                  <th scope="col">Unidad a cargo</th>          
+                  <th scope="col">Detalle</th>    
                 </tr>
               </thead>
               <tbody>
@@ -53,7 +52,6 @@
                   <th>{{ register.nombres }} {{ register.apellidos }}</th>
                   <th>{{ register.fecha }}</th>
                   <th>{{ register.proceso }}</th>
-                  <th>{{ register.detalle }}</th>
                 </tr>
               </tbody>
             </table>

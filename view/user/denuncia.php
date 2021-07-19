@@ -95,12 +95,11 @@
                                                     <option value="">Municipio</option>                                                     
                                                     <?php
                                                         require_once("../../controller/reportes_controlador.php");
-                                                        foreach($matrizDenuncias as $registro)
+                                                        foreach($matrizMunicipios as $registro)
                                                         {
                                                             echo '<option value="'.$registro["id_municipio"].'">'.$registro["descripcion"].'</option>';
                                                         } 
                                                     ?>
-                                                    
                                                 </select>
                                             </div>
 
@@ -183,8 +182,13 @@
                                                 <select v-model="newUser.document_type" class="custom-select"
                                                     id="tipo_documento" required>
                                                     <option selected value="">Tipo de documento</option>
-                                                    <option v-for="document_type in document_types">
-                                                        {{ document_type.descripcion }}</option>
+                                                    <?php
+                                                        require_once("../../controller/reportes_controlador.php");
+                                                        foreach($matrizDocumentos as $registro)
+                                                        {
+                                                            echo '<option value="'.$registro["id_tipo_documento"].'">'.$registro["descripcion"].'</option>';
+                                                        } 
+                                                    ?>
                                                 </select>
                                             </div>
 

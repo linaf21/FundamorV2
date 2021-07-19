@@ -3,6 +3,7 @@
     {
         private $db;
         private $municipios;
+        private $documentos;
 
 
         public function __construct()
@@ -11,6 +12,7 @@
             $this->db=conexion::conexion();
 
             $this->municipios=array();
+            $this->documentos=array();
         }
 
         public function get_municipios()
@@ -23,4 +25,15 @@
             }
             return $this->municipios;
         }
+        public function get_documentos()
+        {
+            $consulta = "SELECT * FROM `tipo_documento` ORDER BY `id_tipo_documento`";
+            $resultado = $this->db->query($consulta);
+            while ($valores = mysqli_fetch_array($resultado)) 
+            {
+                $this->documentos[]=$valores;
+            }
+            return $this->documentos;
+        }
     }
+?>

@@ -3,6 +3,7 @@
     $denuncia=new denuncia_modelo();
     $matrizMunicipios=$denuncia->get_municipios();
     $matrizDocumentos=$denuncia->get_documentos();
+    $insercionReporte=$denuncia->set_reporte();
 
 
 ?>

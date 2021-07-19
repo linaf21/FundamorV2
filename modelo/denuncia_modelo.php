@@ -15,6 +15,34 @@
             $this->documentos=array();
         }
 
+        
+        public function set_reporte()
+        {
+           
+            $municipio = $_POST["select_usuario"];
+            $direccion = $_POST["direccion"];
+            $descripcion = $_POST["descripcion_reporte"];
+            $nombres = $_POST["nombres_denunciante"];
+            $apellidos = $_POST["apellidos_denunciante"];
+            $tipo_documento = $_POST["tipo_documento"];
+            $documento = $_POST["documento_identidad_denunciante"];
+            $email = $_POST["email_denunciante"];
+            $telefono = $_POST["telefono_denunciante"];
+            $v1 = null;
+            $v2 = null;
+            $v3 = null;
+            $v4 = null;
+            $v5 = null;
+            $v6 = null;
+            $v7 = null;
+            $consulta = "INSERT INTO `reporte` (`id_reporte`, `fecha_reporte`, `fk_tipo_documento`, `nombres_denunciante`, `apellidos_denunciante`, `documento_identidad_denunciante`, 
+            `email_denunciante`, `telefono_denunciante`, `descripcion`, `fk_municipio`, `direccion`, `hambre_sed`, `malestar_fisico`, `negligencia`, `miedo_estres`, `comportamiento_natural`, 
+            `agresion_fisica`, `agresion_verbal`, `bienestar_animal`) VALUES (NULL,now(),$tipo_documento,$nombres,$apellidos,$documento,$email,$telefono,$descripcion,$municipio,$direccion,
+            $v1,$v2,$v3,$v4,$v5,$v6,$v7";
+            
+            $resultado=$this->db->query($consulta);
+           
+        }
         public function get_municipios()
         {
             $consulta = "SELECT * FROM `municipio` ORDER BY `id_municipio`";

@@ -60,6 +60,44 @@
                     <a class="boton consultar" id="btn-consultar" href="#">Consultar</a>
                 </div>
             </div>
+
+            <div class="progress-bar1">
+              <div class="paso">
+                <p>Radicado</p>
+                <div class="num">
+                  <span>1</span>
+                </div>  
+                <div class="check fas fa-check"></div>
+              </div>      
+              <div class="paso">
+                <p>Recibido</p>
+                <div class="num">
+                  <span>2</span>
+                </div>  
+                <div class="check fas fa-check"></div>
+              </div>         
+              <div class="paso">
+                <p>Atendido</p>
+                <div class="num">
+                  <span>3</span>
+                </div>  
+                <div class="check fas fa-check"></div>
+              </div>  
+              <div class="paso">
+                <p>Solucionado/Descartado</p>
+                <div class="num">
+                  <span>4</span>
+                </div>  
+                <div class="check fas fa-check"></div>
+              </div>  
+              <div class="paso">
+                <p>Escalado a otro ente</p>
+                <div class="num">
+                  <span>5</span>
+                </div>  
+                <div class="check fas fa-check"></div>
+              </div>                          
+            </div>
         </section>
     </section>  
 

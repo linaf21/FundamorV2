@@ -57,3 +57,55 @@
             margin-left: 25px
         .vacio2
             margin-right: 25px
+            
+    .progress-bar1
+        display: flex
+        margin: 20px 0
+        .paso            
+            margin-bottom: 50px
+            text-align: center
+            width: 100%
+            p
+                font-size: 17px
+                font-weight: 500
+                color: #000
+                margin-bottom: 8px
+            .num
+                position: relative
+                width: 30px
+                height: 30px
+                border: 2px solid #000
+                border-radius: 50%
+                display: inline-block
+                font-weight: 500
+                font-size: 17px
+                line-height: 25px                
+                span
+                    font-weight: 500
+                    font-size: 17px
+                    line-height: 25px                
+                    position: absolute
+                    transform: translateX(-50%)
+                    margin-bottom: 50px
+            .num:before 
+                position: absolute
+                content: ''
+                width: 100px
+                height: 3px
+                bottom: 11px
+                right: -150px
+                background-color: #001D46
+            .num:after 
+                position: absolute
+                content: ''
+                width: 100px
+                height: 3px
+                bottom: 11px
+                right: -150px
+                background-color: #001D46
+        .paso:last-child
+            .num:before
+                display: none
+        .paso:last-child
+            .num:after
+                display: none

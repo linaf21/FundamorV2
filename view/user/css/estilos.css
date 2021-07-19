@@ -478,6 +478,76 @@ header .contenedor_logo_menu .menu a {
   margin-right: 25px;
 }
 
+.main .casos .progress-bar1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.main .casos .progress-bar1 .paso {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.main .casos .progress-bar1 .paso p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.main .casos .progress-bar1 .paso .num {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.main .casos .progress-bar1 .paso .num span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+.main .casos .progress-bar1 .paso .num:before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 3px;
+  bottom: 11px;
+  right: -150px;
+  background-color: #001D46;
+}
+
+.main .casos .progress-bar1 .paso .num:after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 3px;
+  bottom: 11px;
+  right: -150px;
+  background-color: #001D46;
+}
+
+.main .casos .progress-bar1 .paso:last-child .num:before {
+  display: none;
+}
+
+.main .casos .progress-bar1 .paso:last-child .num:after {
+  display: none;
+}
+
 footer {
   padding: 25px 0;
   background: #001D46;

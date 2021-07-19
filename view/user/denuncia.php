@@ -113,11 +113,11 @@
 
                                         <!-- Fila del campo de texto descripcion de los hechos -->
                                         <div class="form-row">
-                                            <dic class="col-12">
+                                            <div class="col-12">
                                                 <label for="message-text" class="col-form-label">Descripción</label>
                                                 <textarea class="form-control" id="message-text"
                                                     placeholder="Descripción de lo hechos" required></textarea>
-                                            </dic>
+                                            </div>
                                         </div>
 
                                         <!-- Fila del campo adjuntar evidencias -->

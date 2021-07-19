@@ -25,9 +25,7 @@
 
     <section class="main">
         <section class="casos" id="casos">
-            <!-- Contenedor de la seccion "Conoce mas" -->
-            <div class="container datos">
-                <!-- Contenedor del titulo principal -->
+            <div class="contenedor-datos">
                 <div class="row texto">
                     <!-- Contenedor del titulo -->
                     <div class="col-12 col-md-12">
@@ -35,7 +33,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="col-md-12"> -->
+                <div class="col-md-12">
                     <!-- Fila del campo de ID reporte -->
                     <div class="form-row">
                         <div class="col-md-1 huellas"></div>
@@ -49,13 +47,13 @@
                     <!-- Fila del campo de ID reporte -->
                     <div class="form-row">
                         <div class="col-md-1 huellas"></div>
-                        <div class="col-md-9">
+                        <div class="col-md-9 pass">
                             <label for="pass_report">Contraseña del Reporte</label>
                                 <input name="pass_report" type="text" class="form-control"
                                     id="pass_report" placeholder="Ingrese la contraseña del reporte" required>
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>
 
                 <!-- Contenedor de los botones de navegacion -->
                 <div class="contenedor-btns">

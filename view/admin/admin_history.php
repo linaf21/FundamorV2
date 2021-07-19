@@ -58,7 +58,7 @@
             </table>
            <!-- Contenedor de los botones de navegacion -->
            <div class="contenedor-btns">
-              <a class="boton detalle" id="btn-detalle" href="#">Ver detalle</a>
+           <a class="boton detalle" href="detalle.php">Ver detalle</a>
           </div>
           </div>
         </div>

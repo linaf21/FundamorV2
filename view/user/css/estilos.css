@@ -138,6 +138,7 @@ header .contenedor_logo_menu .menu a {
   z-index: 0;
   margin-left: 50px;
   margin-top: -250px;
+  display: none;
 }
 
 .main .conoce-mas {
@@ -413,6 +414,10 @@ header .contenedor_logo_menu .menu a {
   margin-bottom: 50px;
 }
 
+.main .casos .pass {
+  margin-bottom: 50px;
+}
+
 .main .casos .contenedor-btns {
   margin-bottom: 50px;
   text-align: center;
@@ -438,24 +443,39 @@ header .contenedor_logo_menu .menu a {
           transition-duration: 0.1s;
 }
 
-.main .casos .datos .huellas {
-  background: url("../img/huellas1.png"), #0f2e5e;
+.main .casos .contenedor-datos .huellas {
+  background: url("../img/huellas1.png"), #EFF5FE;
   margin-right: 25px;
 }
 
-.main .casos .datos .huellas .huellas2 {
-  background: url("../img/huellas2.png"), #103264;
+.main .casos .contenedor-datos .huellas2 {
+  background: url("../img/huellas2.png"), #EFF5FE;
   margin-left: 25px;
 }
 
-.main .casos .datos .huellas .huellas,
-.main .casos .datos .huellas .huellas2,
-.main .casos .datos .huellas .huellas3 {
+.main .casos .contenedor-datos .huellas,
+.main .casos .contenedor-datos .huellas2,
+.main .casos .contenedor-datos .huellas3 {
   width: 60px;
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.main .casos .contenedor-datos .vacio,
+.main .casos .contenedor-datos .vacio2 {
+  position: relative;
+  width: 60px;
+  height: 500px;
+}
+
+.main .casos .contenedor-datos .vacio {
+  margin-left: 25px;
+}
+
+.main .casos .contenedor-datos .vacio2 {
+  margin-right: 25px;
 }
 
 footer {

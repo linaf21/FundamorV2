@@ -396,6 +396,68 @@ header .contenedor_logo_menu .menu a {
   color: #ffffff;
 }
 
+.main .casos {
+  text-align: center;
+}
+
+.main .casos .titulo-casos {
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.main .casos .reporte {
+  margin-bottom: 50px;
+}
+
+.main .casos .contenedor-btns {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main .casos .contenedor-btns .consultar {
+  border-radius: 5px;
+  border: 2px solid #001D46;
+  color: #001D46;
+  padding: 12px 0;
+  font-weight: 700;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.main .casos .contenedor-btns .consultar:hover {
+  text-decoration: none;
+  background: #012557;
+  color: #ffffff;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.main .casos .datos .huellas {
+  background: url("../img/huellas1.png"), #0f2e5e;
+  margin-right: 25px;
+}
+
+.main .casos .datos .huellas .huellas2 {
+  background: url("../img/huellas2.png"), #103264;
+  margin-left: 25px;
+}
+
+.main .casos .datos .huellas .huellas,
+.main .casos .datos .huellas .huellas2,
+.main .casos .datos .huellas .huellas3 {
+  width: 60px;
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
 footer {
   padding: 25px 0;
   background: #001D46;

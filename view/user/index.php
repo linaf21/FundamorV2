@@ -86,7 +86,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="img/perros_caja.jpg" alt="">
+                            <img class="foto" src="img/gallo.png" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">Manejo de denuncias</h4>
                             <!-- Descripcion -->

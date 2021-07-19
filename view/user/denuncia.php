@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -73,7 +73,7 @@
                 <div class="row contenedor-formulario">
                     <div class="col-md-12">
                         <!-- Formulario de denuncia animal-->
-                        <form name="formularioDenuncia" method="GET" action="capturar.php"class="needs-validation contenido-formulario" novalidate>
+                        <form name="formularioDenuncia" method="post" action="conexion.php"class="needs-validation contenido-formulario" novalidate>
                         <!-- Titulo para la seccion informacion adicional -->
                         <div class="form-row">
                                 <div class="col-md-1 huellas"></div>
@@ -91,22 +91,16 @@
                                         <div class="form-row">
                                             <!-- Tipo de documento -->
                                             <div class="col-md-4">
-                                                <select  class="form-control" id="select_usuario" >
-                                                    <option value="">Municipio</option>     
+                                                <select  class="form-control" id="select_usuario" name="select_usuario">
+                                                    <option value="">Municipio</option>                                                     
                                                     <?php
+                                                        require_once("../../controller/reportes_controlador.php");
+                                                        foreach($matrizDenuncias as $registro)
+                                                        {
+                                                            echo '<option value="'.$registro["id_municipio"].'">'.$registro["descripcion"].'</option>';
+                                                        } 
+                                                    ?>
                                                     
-                                                    require '../conector/conexion.php';
-                                                    $sql_s = mysql_query("SELECT descripcion FROM tipo_documento ORDER BY id_tipo_documento");
-                                                    while ($row_s = mysql_fetch_array($sql_s))
-                                                    {
-                                                        $id_tipo_documento = $row_s['id_tipo_documento'];
-                                                        $descripcion = $row_s['descripcion'];
-                                                        ?>  
-                                                        <option value="<?php echo $id_tipo_documento; ?>"><?php echo $nombre; ?></option>
-                                                        
-                                                        <?php
-                                                    }
-                                                    ?>                                   
                                                 </select>
                                             </div>
 

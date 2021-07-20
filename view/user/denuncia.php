@@ -54,7 +54,7 @@
                     <div class="col-lg-6">
                         <!-- Contenedor y foto del header -->
                         <div class="foto_denuncia">
-                            <img class="img-responsive" src="img/perro_denuncia.jpg" alt="">
+                            <img class="img-responsive" src="img/caballo_denuncia.png" alt="">
                         </div>
                     </div>
 
@@ -504,10 +504,10 @@
                                 <div class="col-md-1 huellas2"></div>
                             </div>
                                                  
-
                             <div class="form-row boton">
                                 <button class="btn btn-primary" type="submit" name="submit_button">Enviar formulario</button>
                             </div>
+
                         </div>
 
                         </form>

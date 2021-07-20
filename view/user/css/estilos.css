@@ -135,10 +135,11 @@ header .contenedor_logo_menu .menu a {
 
 .main .descripcion_pagina .descripcion .foto_denuncia {
   position: relative;
+  width: 10px;
+  height: 10px;
   z-index: 0;
   margin-left: 50px;
-  margin-top: -250px;
-  display: none;
+  margin-top: -100px;
 }
 
 .main .conoce-mas {

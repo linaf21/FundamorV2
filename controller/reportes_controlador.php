@@ -3,7 +3,11 @@
     $denuncia=new denuncia_modelo();
     $matrizMunicipios=$denuncia->get_municipios();
     $matrizDocumentos=$denuncia->get_documentos();
-    $insercionReporte=$denuncia->set_reporte();
+    if(isset($_POST["submit_button"]))
+    {
+        $insercionReporte=$denuncia->set_reporte();
+    }
+    
 
 
 ?>

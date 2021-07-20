@@ -20,8 +20,12 @@
 </head>
 
 <body>
+    <?php
+     require_once("../../controller/reportes_controlador.php");
+                                                       
+    ?>
     <header></header>
-    
+        
     <section class="iniciar_sesion"></section>
 
 
@@ -73,7 +77,8 @@
                 <div class="row contenedor-formulario">
                     <div class="col-md-12">
                         <!-- Formulario de denuncia animal-->
-                        <form name="formularioDenuncia" method="post" action="conexion.php"class="needs-validation contenido-formulario" novalidate>
+                        <form name="formularioDenuncia" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post"
+                         class="needs-validation contenido-formulario" novalidate>
                         <!-- Titulo para la seccion informacion adicional -->
                         <div class="form-row">
                                 <div class="col-md-1 huellas"></div>
@@ -94,7 +99,6 @@
                                                 <select  class="form-control" id="select_usuario" name="select_usuario">
                                                     <option value="">Municipio</option>                                                     
                                                     <?php
-                                                        require_once("../../controller/reportes_controlador.php");
                                                         foreach($matrizMunicipios as $registro)
                                                         {
                                                             echo '<option value="'.$registro["id_municipio"].'">'.$registro["descripcion"].'</option>';
@@ -115,7 +119,7 @@
                                         <div class="form-row">
                                             <div class="col-12">
                                                 <label for="message-text" class="col-form-label">Descripción</label>
-                                                <textarea class="form-control" id="message-text"
+                                                <textarea class="form-control" id="message-text" name="descripcion_reporte"
                                                     placeholder="Descripción de lo hechos" required></textarea>
                                             </div>
                                         </div>
@@ -180,7 +184,7 @@
                                             <!-- Tipo de documento -->
                                             <div class="col-md-4">
                                                 <select v-model="newUser.document_type" class="custom-select"
-                                                    id="tipo_documento" required>
+                                                    id="tipo_documento" name="tipo_documento" required>
                                                     <option selected value="">Tipo de documento</option>
                                                     <?php
                                                         require_once("../../controller/reportes_controlador.php");
@@ -502,7 +506,7 @@
                                                  
 
                             <div class="form-row boton">
-                                <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                                <button class="btn btn-primary" type="submit" name="submit_button">Enviar formulario</button>
                             </div>
                         </div>
 

@@ -1,35 +1,3 @@
-<?php
-    require_once("../../modelo/conexion.php");
-    // require_once("../../modelo/iniciar_sesion.php");
-
-    $message = '';
-    
-    if(!empty($POST['nombres']) && !empty($_POST['apellidos']) && !empty($POST['fk_tipo_documento']) 
-    && !empty($_POST['documento_identidad']) && !empty($POST['fk_rol']) 
-    && !empty($_POST['email']) && !empty($POST['telefono']) && !empty($_POST['password']))
-    {
-        $sql = "INSERT INTO usuario2(nombres, apellidos, fk_tipo_documento,
-        documento_identidad, fk_rol, email, telefono, password2) VALUES (:nombres, :apellidos, 
-        :fk_tipo_documento, :documento_identidad, :fk_rol, :email, :telefono, :password2)";
-        $stmt = $conexion->prepare($sql);
-        $stmt->bindParam(':nombres', $_POST['nombres']);
-        $stmt->bindParam(':apellidos', $_POST['apellidos']);
-        $stmt->bindParam(':fk_tipo_documento', $_POST['fk_tipo_documento']);
-        $stmt->bindParam(':documento_identidad', $_POST['documento_identidad']);
-        $stmt->bindParam(':fk_rol', $_POST['fk_rol']);
-        $stmt->bindParam(':email', $_POST['email']);
-        $stmt->bindParam(':telefono', $_POST['telefono']);
-        $password2 = password_hash($_POST['password2'], PASSWORD_BCRYPT);
-        $stmt->bindParam(':password2', $_POST['$password2']);
-    
-        if($stmt->execute())
-        {
-          $message = "Usuario agregado exitosamente";
-        } else{
-          $message = "Error al agregar al usuario";
-        }
-    }
-?>
 <!doctype html>
 <html lang="en">
 
@@ -47,7 +15,10 @@
 </head>
 
 <body>
-  <header></header>
+    <?php
+      require_once("../../controller/usuarios_controler.php");
+    ?>
+    <header></header>
 
   <section class="main" id="app">
 
@@ -118,11 +89,6 @@
     </section>
 
     <section class="registrar_usuario">
-
-      <?php if(!empty($message)): ?>
-        <p> <?=$message?> </p>
-      <?php endif;?>
-
       <div class="modal fade" id="ModalCreate" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -135,7 +101,8 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form method="post" action="admin_users.php">
+                <form name="formularioUsuario"  method="post"
+                class="needs-validation contenido-formulario" novalidate>
                   <!-- Fila del campo de texto nombre(s) -->
                   <div class="form-row">
                     <div class="col-12">
@@ -165,15 +132,16 @@
                   <div class="form-row">
                     <!-- Tipo de documento -->
                     <div class="col-md-4">
-                      <select name="fk_tipo_documento" class="custom-select" id="fk_tipo_documento" required>
-                        <option selected value="">Tipo de documento</option>
-                        <?php
-                        foreach($matrizMunicipios as $registro)
-                        {
-                            echo '<option value="'.$registro["id_municipio"].'">'.$registro["descripcion"].'</option>';
-                        } 
-                    ?>
-                      </select>
+                        <select class="custom-select" id="tipo_documento" name="tipo_documento" required>
+                            <option selected value="">Tipo de documento</option>
+                            <?php
+                                require_once("../../controller/usuarios_controler.php");
+                                foreach($matrizDocumentos as $registro)
+                                {
+                                    echo '<option value="'.$registro["id_tipo_documento"].'">'.$registro["descripcion"].'</option>';
+                                } 
+                            ?>
+                        </select>
                     </div>
 
                     <!-- Campo numero de documento -->
@@ -188,10 +156,16 @@
                   <div class="form-row">
                     <div class="col-md-12">
                       <label for="rol_usuario">Rol del usuario</label>
-                      <select name="fk_rol" class="custom-select" id="fk_rol" required>
-                        <option selected value="">Seleccione un Rol</option>
-                        <option v-for="rol in rols">{{ rol.descripcion }}</option>
-                      </select>
+                      <select class="custom-select" id="rol" name="rol" required>
+                            <option selected value="">Rol</option>
+                            <?php
+                                require_once("../../controller/usuarios_controler.php");
+                                foreach($matrizRoles as $rol)
+                                {
+                                    echo '<option value="'.$rol["id_rol"].'">'.$rol["descripcion"].'</option>';
+                                } 
+                            ?>
+                        </select>
                     </div>
 
                   </div>
@@ -220,7 +194,7 @@
                   <div class="form-row">
                     <div class="col-12">
                       <label for="inputPassword">Contraseña</label>
-                      <input name="password2" type="password" class="form-control" id="password2"
+                      <input name="password" type="password" class="form-control" id="password"
                         placeholder="Contraseña" required>
                     </div>
                   </div>
@@ -228,9 +202,8 @@
                   <!-- Fila de botones -->
                   <div class="form-row botones">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <input type="submit" value ="Crear usuario">
+                    <button class="btn btn-primary"  data-dismiss="modal" type="submit" name="submit_button">Crear usuario</button>
                   </div>
-
                 </form>
               </div>
             </div>
@@ -390,8 +363,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
-
-  <!-- <script src="../../controller/admin_users.js"></script> -->
 
   <script src="js/jquery.min.js"></script>
 

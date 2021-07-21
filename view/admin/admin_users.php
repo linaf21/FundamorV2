@@ -1,3 +1,35 @@
+<?php
+    require_once("../../modelo/conexion.php");
+    // require_once("../../modelo/iniciar_sesion.php");
+
+    $message = '';
+    
+    if(!empty($POST['nombres']) && !empty($_POST['apellidos']) && !empty($POST['fk_tipo_documento']) 
+    && !empty($_POST['documento_identidad']) && !empty($POST['fk_rol']) 
+    && !empty($_POST['email']) && !empty($POST['telefono']) && !empty($_POST['password']))
+    {
+        $sql = "INSERT INTO usuario2(nombres, apellidos, fk_tipo_documento,
+        documento_identidad, fk_rol, email, telefono, password2) VALUES (:nombres, :apellidos, 
+        :fk_tipo_documento, :documento_identidad, :fk_rol, :email, :telefono, :password2)";
+        $stmt = $conexion->prepare($sql);
+        $stmt->bindParam(':nombres', $_POST['nombres']);
+        $stmt->bindParam(':apellidos', $_POST['apellidos']);
+        $stmt->bindParam(':fk_tipo_documento', $_POST['fk_tipo_documento']);
+        $stmt->bindParam(':documento_identidad', $_POST['documento_identidad']);
+        $stmt->bindParam(':fk_rol', $_POST['fk_rol']);
+        $stmt->bindParam(':email', $_POST['email']);
+        $stmt->bindParam(':telefono', $_POST['telefono']);
+        $password2 = password_hash($_POST['password2'], PASSWORD_BCRYPT);
+        $stmt->bindParam(':password2', $_POST['$password2']);
+    
+        if($stmt->execute())
+        {
+          $message = "Usuario agregado exitosamente";
+        } else{
+          $message = "Error al agregar al usuario";
+        }
+    }
+?>
 <!doctype html>
 <html lang="en">
 
@@ -30,7 +62,7 @@
         </div>
 
         <form class = "form_search">  
-             <input class="input_form" type = "text" name = "busqueda" id = "busqueda" placeholder = "Buscar historial" required size="45">
+             <input class="input_form" type = "text" name = "busqueda" id = "busqueda" placeholder = "Buscar usuarios" required size="45">
         </form>
 
         <div class="row">
@@ -87,6 +119,10 @@
 
     <section class="registrar_usuario">
 
+      <?php if(!empty($message)): ?>
+        <p> <?=$message?> </p>
+      <?php endif;?>
+
       <div class="modal fade" id="ModalCreate" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -99,12 +135,12 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form class="needs-validation" novalidate>
+                <form method="post" action="admin_users.php">
                   <!-- Fila del campo de texto nombre(s) -->
                   <div class="form-row">
                     <div class="col-12">
                       <label for="nombre">Nombre(s)</label>
-                      <input v-model="newUser.first_name" type="text" class="form-control" id="validationCustom01"
+                      <input name = "nombres" type="text" class="form-control" id="nombres"
                         placeholder="Nombre(s)" required>
                     </div>
                   </div>
@@ -113,7 +149,7 @@
                   <div class="form-row">
                     <div class="col-12">
                       <label for="apellidos">Apellidos</label>
-                      <input v-model="newUser.last_name" type="text" class="form-control" id="apellidos"
+                      <input name="apellidos" type="text" class="form-control" id="apellidos"
                         placeholder="Apellidos" required>
                     </div>
                   </div>
@@ -129,15 +165,20 @@
                   <div class="form-row">
                     <!-- Tipo de documento -->
                     <div class="col-md-4">
-                      <select v-model="newUser.document_type" class="custom-select" id="tipo_documento" required>
+                      <select name="fk_tipo_documento" class="custom-select" id="fk_tipo_documento" required>
                         <option selected value="">Tipo de documento</option>
-                        <option v-for="document_type in document_types">{{ document_type.descripcion }}</option>
+                        <?php
+                        foreach($matrizMunicipios as $registro)
+                        {
+                            echo '<option value="'.$registro["id_municipio"].'">'.$registro["descripcion"].'</option>';
+                        } 
+                    ?>
                       </select>
                     </div>
 
                     <!-- Campo numero de documento -->
                     <div class="col-8">
-                      <input v-model="newUser.document_number" type="text" class="form-control" id="numero_documento"
+                      <input name="documento_identidad" type="text" class="form-control" id="documento_identidad"
                         placeholder="Número de documento" required>
                     </div>
 
@@ -147,7 +188,7 @@
                   <div class="form-row">
                     <div class="col-md-12">
                       <label for="rol_usuario">Rol del usuario</label>
-                      <select v-model="newUser.user_rol" class="custom-select" id="rol_usuario" required>
+                      <select name="fk_rol" class="custom-select" id="fk_rol" required>
                         <option selected value="">Seleccione un Rol</option>
                         <option v-for="rol in rols">{{ rol.descripcion }}</option>
                       </select>
@@ -159,7 +200,7 @@
                   <div class="form-row">
                     <div class="col-12">
                       <label for="correo_electronico">Correo Electrónico</label>
-                      <input v-model="newUser.email" type="text" class="form-control" id="correo_electronico"
+                      <input name="email" type="text" class="form-control" id="email"
                         placeholder="Correo electrónico" required>
                     </div>
 
@@ -169,32 +210,17 @@
                   <div class="form-row">
                     <div class="col-12">
                       <label for="numero_telefonico">Número telefónico</label>
-                      <input v-model="newUser.telephone_number" type="text" class="form-control" id="numero_telefonico"
+                      <input name="telefono" type="text" class="form-control" id="telefono"
                         placeholder="Número telefónico" required>
                     </div>
 
-                  </div>
-
-                  <!-- Fila del campo de texto nombre de usuario -->
-                  <div class="form-row">
-                    <div class="col-12">
-                      <label for="nombre_usuario">Nombre de usuario</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
-                        </div>
-                        <input v-model="newUser.user_name" type="text" class="form-control" id="nombre_usuario"
-                          placeholder="Nombre de usuario" required>
-                      </div>
-
-                    </div>
                   </div>
 
                   <!-- Fila del campo de texto contraseña -->
                   <div class="form-row">
                     <div class="col-12">
                       <label for="inputPassword">Contraseña</label>
-                      <input v-model="newUser.password" type="password" class="form-control" id="inputPassword"
+                      <input name="password2" type="password" class="form-control" id="password2"
                         placeholder="Contraseña" required>
                     </div>
                   </div>
@@ -202,7 +228,7 @@
                   <!-- Fila de botones -->
                   <div class="form-row botones">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" @click="createUser()">Crear usuario</button>
+                    <input type="submit" value ="Crear usuario">
                   </div>
 
                 </form>
@@ -365,13 +391,13 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
 
-  <script src="../../controller/admin_users.js"></script>
+  <!-- <script src="../../controller/admin_users.js"></script> -->
 
   <script src="js/jquery.min.js"></script>
 
   <script src="js/util.js"></script>
 
-  <!-- <script src="js/validaciones.js"></script> -->
+  <script src="js/validaciones.js"></script>
 
 </body>
 

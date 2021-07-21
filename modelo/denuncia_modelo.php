@@ -31,14 +31,14 @@
             $documento =(int)$_POST["documento_identidad_denunciante"];
             $email = $_POST["email_denunciante"];
             $telefono =(int)$_POST["telefono_denunciante"];
-            $v1 = null;
-            $v2 = null;
-            $v3 = null;
-            $v4 = null;
-            $v5 = null;
-            $v6 = null;
-            $v7 = null;
-            $v8 = null;
+            $v1 = $_POST["hambre_sed"];
+            $v2 = $_POST["malestar_fisico"];
+            $v3 = $_POST["negligencia"];
+            $v4 = $_POST["miedo_estres"];
+            $v5 = $_POST["comportamiento_natural"];
+            $v6 = $_POST["agresion_fisica"];
+            $v7 = $_POST["agresion_verbal"];
+            $v8 = $_POST["bienestar_animal"];
 
             $sql= $this->db->prepare("INSERT INTO reporte (id_reporte, fecha_reporte, fk_tipo_documento, fk_adjunto, nombres_denunciante, 
             apellidos_denunciante, documento_identidad_denunciante, email_denunciante, telefono_denunciante, descripcion, fk_departamento, 

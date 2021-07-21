@@ -9,24 +9,24 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form >
                             <div class="form-group">
                                 <h3>Iniciar sesión</h3>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                <input type="email" class="form-control" id="email" name="email"
                                     placeholder="Correo electrónico" aria-describedby="emailHelp" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                <input type="password" class="form-control" id="password" name ="password"
                                     placeholder="Contraseña" required>
                             </div>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary" @click="">Iniciar sesión</button>
+                            <button type="submit" class="btn btn-primary" @click="">Iniciar sesión</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</body>
+</html>

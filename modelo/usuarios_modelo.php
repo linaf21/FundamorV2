@@ -16,7 +16,7 @@
 
         public function set_usuarios()
         {
-            $id_usuario = null;
+            $id_usuario = $_POST["documento_identidad"];
             $nombres = $_POST["nombres"];
             $apellidos= $_POST["apellidos"];
             $tipo_documento = $_POST["tipo_documento"];
@@ -37,8 +37,8 @@
                 print_r($this->db->error);
             }
 
-            $sql->bind_param('siissssssss', $id_usuario, $nombres, $apellidos, $tipo_documento, $documento_identidad, $rol,
-            $email, $telefono, $password, $estado, $fecha);
+            $sql->bind_param('siissssssss', $id_usuario, $tipo_documento, $rol, $password, $nombres, $apellidos, $documento_identidad,
+            $email, $telefono,  $estado, $fecha);
             $sql->execute();
         }
 

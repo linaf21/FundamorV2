@@ -4,6 +4,7 @@
         private $db;
         private $municipios;
         private $documentos;
+        public $message = '';
 
 
         public function __construct()
@@ -54,6 +55,13 @@
             $sql->bind_param('isisssssssiisssssssss',$id_reporte,$fecha,$tipo_documento,$adjunto,$nombres,$apellidos,$documento,$email,$telefono,$descripcion,
             $departamento,$municipio,$direccion,$v1,$v2,$v3,$v4,$v5,$v6,$v7,$v8);
             $sql->execute();
+
+            if($sql->execute())
+            {
+                 $message = "Reporte registrado exitosamente";
+            } else{
+                $message = "Error al realizar el reporte";
+            }
           
            
         }

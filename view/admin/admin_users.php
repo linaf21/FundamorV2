@@ -75,7 +75,7 @@
       </div>
     </section>
 
-    <section class="boton-flotante">
+    <section method="post" class="boton-flotante">
       <div class="boton">
         <input type="checkbox" id="btn-mas">
         <div class="redes">
@@ -101,7 +101,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form name="formularioUsuario"  method="post"
+                <form name="formularioUsuario"  method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"
                 class="needs-validation contenido-formulario" novalidate>
                   <!-- Fila del campo de texto nombre(s) -->
                   <div class="form-row">
@@ -202,7 +202,7 @@
                   <!-- Fila de botones -->
                   <div class="form-row botones">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button class="btn btn-primary"  data-dismiss="modal" type="submit" name="submit_button">Crear usuario</button>
+                    <button class="btn btn-primary" type="submit" name="submit_button" @click="createUser()">Crear usuario</button>
                   </div>
                 </form>
               </div>

@@ -403,7 +403,7 @@
                                             física?</label>
                                         <!-- Opciones de respuesta para la pregunta 6 -->
                                         <div class="form-row" id="pregunta6">
-                                            <!-- Opcion 2 -->
+                                            <!-- Opción 2 -->
                                             <div class="custom-control custom-radio custom-control-inline">
                                                 <!-- Radio button -->
                                                 <input type="radio" id="preguntaRadio61" name="agresion_fisica"

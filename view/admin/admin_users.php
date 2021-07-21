@@ -50,11 +50,15 @@
                 </tr>
               </thead>
               <tbody>
+              <?php
+                  foreach($matrizUsuarios as $registro)
+                  {
+                ?>
                 <tr class="text-center" v-for="register in registers">
-                  <th>{{ register.documento_identidad }}</th>
-                  <th>{{ register.nombres }} {{ register.apellidos }}</th>
-                  <th>{{ register.email }}</th>
-                  <th>{{ register.estado }}</th>
+                  <th><?php echo $registro[0]?></th>
+                  <th><?php echo $registro[1]?></th>
+                  <th><?php echo $registro[2]?></th>
+                  <th><?php echo $registro[3]?></th>
                   <th class="botones">
                     <button @click="selectUser(register,1)" class="btn btn-warning" data-toggle="modal"
                       data-target="#ModalUpdate">
@@ -65,6 +69,9 @@
                     </button>
                   </th>
                 </tr>
+                <?php
+                  }
+                ?>
               </tbody>
             </table>
           </div>

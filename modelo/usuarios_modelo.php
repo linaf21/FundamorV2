@@ -4,6 +4,7 @@
         private $db;
         private $roles;
         private $documentos;    
+        private $usuario;
 
         public function __construct()
         {
@@ -40,8 +41,6 @@
             $sql->bind_param('siissssssss', $id_usuario, $tipo_documento, $rol, $password, $nombres, $apellidos, $documento_identidad,
             $email, $telefono,  $estado, $fecha);
             $sql->execute();
-            $var = "fin";
-            echo "<script> alert('".$var."'); </script>";
         }   
 
         public function get_roles()
@@ -64,6 +63,18 @@
                 $this->documentos[]=$valores;
             }
             return $this->documentos;
+        }
+
+        public function get_usuarios()
+        {
+            $consulta = "SELECT id_usuario, CONCAT_WS(' ',nombres,apellidos), email, estado FROM usuario ORDER BY registro_ultimo_acceso DESC";
+            $resultado = $this->db->query($consulta);
+            
+            while ($valores = mysqli_fetch_array($resultado)) 
+            {
+                $this->usuario[]=$valores;
+            }
+            return $this->usuario;
         }
     }
 

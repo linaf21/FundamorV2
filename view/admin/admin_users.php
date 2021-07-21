@@ -135,7 +135,6 @@
                         <select class="custom-select" id="tipo_documento" name="tipo_documento" required>
                             <option selected value="">Tipo de documento</option>
                             <?php
-                                require_once("../../controller/usuarios_controler.php");
                                 foreach($matrizDocumentos as $registro)
                                 {
                                     echo '<option value="'.$registro["id_tipo_documento"].'">'.$registro["descripcion"].'</option>';
@@ -159,7 +158,6 @@
                       <select class="custom-select" id="rol" name="rol" required>
                             <option selected value="">Rol</option>
                             <?php
-                                require_once("../../controller/usuarios_controler.php");
                                 foreach($matrizRoles as $rol)
                                 {
                                     echo '<option value="'.$rol["id_rol"].'">'.$rol["descripcion"].'</option>';

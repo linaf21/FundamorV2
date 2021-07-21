@@ -14,6 +14,10 @@
 </head>
 
 <body>
+  <?php
+     require_once("../../controller/historial_admin_controler.php");
+                                                       
+  ?>
   <header></header>
 
   <section class="main" id="app">
@@ -41,19 +45,24 @@
                   <th scope="col">Fecha</th>
                   <th scope="col">Municipio</th>
                   <th scope="col">Dirección</th>
-                  <th scope="col">Detalle</th>
-                  <th scope="col">Unidad a cargo</th>          
+                  <th scope="col">Detalle</th>        
                 </tr>
               </thead>
               <tbody>
+                <?php
+                  foreach($matrizReportes as $registro)
+                  {
+                ?>
                 <tr class="text-center contenido" v-for="register in registers">
-                  <th>{{ register.consecutivo }}</th>
-                  <th>{{ register.consecutivo }}</th>
-                  <th>{{ register.nombres }} {{ register.apellidos }}</th>
-                  <th>{{ register.fecha }}</th>
-                  <th>{{ register.proceso }}</th>
-                  <th>{{ register.detalle }}</th>
+                  <th><?php echo $registro[0]?></th>
+                  <th><?php echo $registro[1]?></th>
+                  <th><?php echo $registro[2]?></th>
+                  <th><?php echo $registro[3]?></th>
+                  <th><?php echo $registro[4]?></th>
                 </tr>
+                <?php
+                  }
+                ?>
               </tbody>
             </table>
            <!-- Contenedor de los botones de navegacion -->

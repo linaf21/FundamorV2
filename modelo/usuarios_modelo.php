@@ -40,7 +40,9 @@
             $sql->bind_param('siissssssss', $id_usuario, $tipo_documento, $rol, $password, $nombres, $apellidos, $documento_identidad,
             $email, $telefono,  $estado, $fecha);
             $sql->execute();
-        }
+            $var = "fin";
+            echo "<script> alert('".$var."'); </script>";
+        }   
 
         public function get_roles()
         {

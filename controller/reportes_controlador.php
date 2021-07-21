@@ -7,7 +7,4 @@
     {
         $insercionReporte=$denuncia->set_reporte();
     }
-    
-
-
 ?>

@@ -25,7 +25,7 @@
                                                        
     ?>
     <header></header>
-        
+
     <section class="iniciar_sesion"></section>
 
 
@@ -77,7 +77,7 @@
                 <div class="row contenedor-formulario">
                     <div class="col-md-12">
                         <!-- Formulario de denuncia animal-->
-                        <form name="formularioDenuncia" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post"
+                        <form name="formularioDenuncia"  method="post"
                          class="needs-validation contenido-formulario" novalidate>
                         <!-- Titulo para la seccion informacion adicional -->
                         <div class="form-row">

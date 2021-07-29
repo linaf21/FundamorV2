@@ -15,7 +15,7 @@
     <!-- font-family: 'Lato', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="view/user/css/estilos.css">
     <title>Denunciar Maltrato Animal</title>
 </head>
 
@@ -52,7 +52,7 @@
                         <!-- Contenedor de los botones de navegacion -->
                         <div class="contenedor-btns">
                             <a class="boton informacion" id="btn-informacion" href="#">Información</a>
-                            <a class="boton denunciar" href="denuncia.php">Denunciar</a>
+                            <a class="boton denunciar" href="view/user/denuncia.php">Denunciar</a>
                         </div>
                     </div>
 
@@ -60,7 +60,7 @@
                     <div class="col-lg-6">
                         <!-- Contenedor y foto del header -->
                         <div class="foto">
-                            <img class="img-responsive" src="img/pug_home.jpg" alt="">
+                            <img class="img-responsive" src="view/user/img/pug_home.jpg" alt="">
                         </div>
                     </div>
 
@@ -86,7 +86,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="img/gallo.png" alt="">
+                            <img class="foto" src="view/user/img/gallo.png" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">Manejo de denuncias</h4>
                             <!-- Descripcion -->
@@ -103,7 +103,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="img/gato_sofa.jpg" alt="">
+                            <img class="foto" src="view/user/img/gato_sofa.jpg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">¿Mascotas y COVID?</h4>
                             <!-- Descripcion -->
@@ -119,7 +119,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="img/perro_libro.jpg" alt="">
+                            <img class="foto" src="view/user/img/perro_libro.jpg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">Documentos legales</h4>
                             <!-- Descripcion -->
@@ -152,7 +152,7 @@
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="img/gato_casos.jpg" alt="">
+                        <img src="view/user/img/gato_casos.jpg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Casos de abuso al año</h4>
                         <!-- Descripcion de la estadistica -->
@@ -165,7 +165,7 @@
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="img/gato_calle.jpg" alt="">
+                        <img src="view/user/img/gato_calle.jpg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Animales en condición de calle</h4>
                         <!-- Descripcion de la estadistica -->
@@ -179,7 +179,7 @@
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="img/perro_veterinario.jpg" alt="">
+                        <img src="view/user/img/perro_veterinario.jpg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Animales atendidos</h4>
                         <!-- Descripcion de la estadistica -->
@@ -241,9 +241,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/efectos.js"></script>
-    <script src="js/util.js"></script>
+    <script src="view/user/js/jquery.min.js"></script>
+    <script src="view/user/js/efectos.js"></script>
+    <script src="view/user/js/util.js"></script>
 </body>
 
 </html>

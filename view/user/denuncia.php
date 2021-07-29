@@ -187,7 +187,6 @@
                                                     id="tipo_documento" name="tipo_documento" required>
                                                     <option selected value="">Tipo de documento</option>
                                                     <?php
-                                                        require_once("../../controller/reportes_controlador.php");
                                                         foreach($matrizDocumentos as $registro)
                                                         {
                                                             echo '<option value="'.$registro["id_tipo_documento"].'">'.$registro["descripcion"].'</option>';

@@ -22,6 +22,9 @@
 <body>
     <!-- Contenedor principal header -->
     <header></header>
+    <?php
+    require_once("view/user/iniciar_sesion.php");
+    ?>
 
     <section class="iniciar_sesion"></section>
 

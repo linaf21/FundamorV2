@@ -20,9 +20,10 @@
 </head>
 
 <body>
-   
-     <!-- require_once("../../controller/reportes_controlador.php"); -->
-    
+    <?php
+    //  require_once("../../controller/reportes_controlador.php");
+                                                       
+    ?>
     <header></header>
 
     <section class="iniciar_sesion"></section>

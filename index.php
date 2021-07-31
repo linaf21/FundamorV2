@@ -24,6 +24,7 @@
     <header></header>
     <?php
     require_once("view/user/iniciar_sesion.php");
+    require_once("controller/reportes_controlador.php");
     ?>
 
     <section class="iniciar_sesion"></section>

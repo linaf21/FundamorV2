@@ -21,7 +21,7 @@
 
 <body>
     <?php
-     require_once("../../controller/reportes_controlador.php");
+    //  require_once("../../controller/reportes_controlador.php");
                                                        
     ?>
     <header></header>

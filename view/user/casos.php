@@ -61,7 +61,8 @@
                 </div>
             </div>
 
-            <div class="progress-bar1">
+          <section class="container">
+            <div class="col-md-12 progress-bar1">
               <div class="paso">
                 <p>Radicado</p>
                 <div class="num">
@@ -98,6 +99,8 @@
                 <div class="check fas fa-check"></div>
               </div>                          
             </div>
+          </section>
+            
         </section>
     </section>  
 

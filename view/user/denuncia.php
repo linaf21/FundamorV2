@@ -149,10 +149,7 @@
                                         </div>
                                     </section>
                                 </div>
-                                <div class="col-md-1 vacio"></div>
-
-                                <div class="col-md-1 vacio"></div>
-                                <div class="col-md-9">
+                                <div class="container col-md-9">
                                     <!-- Titulo para la seccion tipo de denuncia -->
                                     <label class="subtitulo" for="tipo-denuncia">Tipo de denuncia</label>
                                     <section class="tipo-denuncia" id="tipo-denuncia">
@@ -226,280 +223,278 @@
 
                                     <!-- Titulo para la seccion condiciones del animal -->   
                                     <div class="form-row">
-                                        <div class="col-md-1 vacio"></div>
-                                        <div class="col-md-9">
+                                        <div class="container col-md-9">
                                             <label class="subtitulo" for="condiciones-animal">Condiciones del animal</label>
                                             <section class="condiciones-animal" id="condiciones-animal">
                                                 <!-- Enunciado de la pregunta -->
                                                 <label for="pregunta1">1. ¿El animal sufre de hambre o sed, presenta síntomas
-                                                    de
-                                            desnutrición?</label>
-                                        <!-- Opciones de respuesta para la pregunta 1 -->
-                                        <div class="form-row" id="pregunta1">
-                                            <!-- Opcion 1 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio11" name="hambre_sed"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio11">Si</label>
-                                            </div>
+                                                    de desnutrición?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 1 -->
+                                                    <div class="form-row" id="pregunta1">
+                                                        <!-- Opcion 1 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio11" name="hambre_sed"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio11">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio12" name="hambre_sed"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio12">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio13" name="hambre_sed"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio13">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio12" name="hambre_sed"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio12">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio13" name="hambre_sed"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio13">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
-                                        <!-- Enunciado de la pregunta -->
-                                        <label for="pregunta2">2. ¿El animal sufre injustificadamente malestar físico o
-                                            dolor?</label>
-                                        <!-- Opciones de respuesta para la pregunta 2 -->
-                                        <div class="form-row" id="pregunta2">
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio21" name="malestar_fisico"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio21">Si</label>
-                                            </div>
+                                                    <!-- Enunciado de la pregunta -->
+                                                    <label for="pregunta2">2. ¿El animal sufre injustificadamente malestar físico o
+                                                        dolor?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 2 -->
+                                                    <div class="form-row" id="pregunta2">
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio21" name="malestar_fisico"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio21">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio22" name="malestar_fisico"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio22">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio23" name="malestar_fisico"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio23">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio22" name="malestar_fisico"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio22">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio23" name="malestar_fisico"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio23">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
-                                        <!-- Enunciado de la pregunta -->
-                                        <label for="pregunta3">3. ¿El animal sufre de enfermedades por negligencia o
-                                            descuido?</label>
-                                        <!-- Opciones de respuesta para la pregunta 3 -->
-                                        <div class="form-row" id="pregunta3">
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio31" name="negligencia"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio31">Si</label>
-                                            </div>
+                                                    <!-- Enunciado de la pregunta -->
+                                                    <label for="pregunta3">3. ¿El animal sufre de enfermedades por negligencia o
+                                                        descuido?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 3 -->
+                                                    <div class="form-row" id="pregunta3">
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio31" name="negligencia"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio31">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio32" name="negligencia"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio32">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio33" name="negligencia"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio33">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio32" name="negligencia"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio32">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio33" name="negligencia"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio33">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
-                                        <!-- Enunciado de la pregunta -->
-                                        <label for="pregunta4">4. ¿El animal es sometido a condiciones de miedo o
-                                            estrés?</label>
-                                        <!-- Opciones de respuesta para la pregunta 4 -->
-                                        <div class="form-row" id="pregunta4">
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio41" name="miedo_estres"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio41">Si</label>
-                                            </div>
+                                                    <!-- Enunciado de la pregunta -->
+                                                    <label for="pregunta4">4. ¿El animal es sometido a condiciones de miedo o
+                                                        estrés?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 4 -->
+                                                    <div class="form-row" id="pregunta4">
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio41" name="miedo_estres"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio41">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio42" name="miedo_estres"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio42">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio43" name="miedo_estres"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio43">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio42" name="miedo_estres"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio42">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio43" name="miedo_estres"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio43">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
-                                        <!-- Enunciado de la pregunta -->
-                                        <label for="pregunta5">5. ¿El espacio donde se encuentra ubicado el animal es
-                                            adecuado
-                                            para que este se exprese de forma natural ?</label>
-                                        <!-- Opciones de respuesta para la pregunta 5 -->
-                                        <div class="form-row" id="pregunta5">
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio51" name="comportamiento_natural"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio51">Si</label>
-                                            </div>
+                                                    <!-- Enunciado de la pregunta -->
+                                                    <label for="pregunta5">5. ¿El espacio donde se encuentra ubicado el animal es
+                                                        adecuado
+                                                        para que este se exprese de forma natural ?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 5 -->
+                                                    <div class="form-row" id="pregunta5">
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio51" name="comportamiento_natural"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio51">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio52" name="comportamiento_natural"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio52">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio53" name="comportamiento_natural"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio53">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio52" name="comportamiento_natural"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio52">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio53" name="comportamiento_natural"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio53">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
-                                        <!-- Enunciado de la pregunta -->
-                                        <label for="pregunta6">6. ¿El responsable del animal lo agrede de forma
-                                            física?</label>
-                                        <!-- Opciones de respuesta para la pregunta 6 -->
-                                        <div class="form-row" id="pregunta6">
-                                            <!-- Opción 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio61" name="agresion_fisica"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio61">Si</label>
-                                            </div>
+                                                    <!-- Enunciado de la pregunta -->
+                                                    <label for="pregunta6">6. ¿El responsable del animal lo agrede de forma
+                                                        física?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 6 -->
+                                                    <div class="form-row" id="pregunta6">
+                                                        <!-- Opción 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio61" name="agresion_fisica"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio61">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio62" name="agresion_fisica"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio62">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio63" name="agresion_fisica"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio63">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio62" name="agresion_fisica"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio62">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio63" name="agresion_fisica"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio63">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
-                                        <!-- Enunciado de la pregunta -->
-                                        <label for="pregunta7">7.¿El responsable del animal lo agrede de forma
-                                            verbal?</label>
-                                        <!-- Opciones de respuesta para la pregunta 7 -->
-                                        <div class="form-row" id="pregunta7">
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio71" name="agresion_verbal"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio71">Si</label>
-                                            </div>
+                                                    <!-- Enunciado de la pregunta -->
+                                                    <label for="pregunta7">7.¿El responsable del animal lo agrede de forma
+                                                        verbal?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 7 -->
+                                                    <div class="form-row" id="pregunta7">
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio71" name="agresion_verbal"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio71">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio72" name="agresion_verbal"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio72">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio73" name="agresion_verbal"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio73">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio72" name="agresion_verbal"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio72">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio73" name="agresion_verbal"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio73">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
 
-                                        <!-- Enunciado de la pregunta -->
-                                        <label for="pregunta8">8. ¿El responsable del animal cuenta con la capacidad de
-                                            brindar
-                                            bienestar al animal?</label>
-                                        <!-- Opciones de respuesta para la pregunta 8 -->
-                                        <div class="form-row" id="pregunta8">
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio81" name="bienestar_animal"
-                                                    class="custom-control-input" value="Si" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio81">Si</label>
-                                            </div>
+                                                    <!-- Enunciado de la pregunta -->
+                                                    <label for="pregunta8">8. ¿El responsable del animal cuenta con la capacidad de
+                                                        brindar
+                                                        bienestar al animal?</label>
+                                                    <!-- Opciones de respuesta para la pregunta 8 -->
+                                                    <div class="form-row" id="pregunta8">
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio81" name="bienestar_animal"
+                                                                class="custom-control-input" value="Si" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio81">Si</label>
+                                                        </div>
 
-                                            <!-- Opcion 2 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio82" name="bienestar_animal"
-                                                    class="custom-control-input" value="No" required>
-                                                <!-- texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio82">No</label>
-                                            </div>
-                                            <!-- Opcion 3 -->
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <!-- Radio button -->
-                                                <input type="radio" id="preguntaRadio83" name="bienestar_animal"
-                                                    class="custom-control-input" value="No responde" required>
-                                                <!-- Texto de la opcion -->
-                                                <label class="custom-control-label" for="preguntaRadio83">No
-                                                    responde</label>
-                                            </div>
-                                        </div>
+                                                        <!-- Opcion 2 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio82" name="bienestar_animal"
+                                                                class="custom-control-input" value="No" required>
+                                                            <!-- texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio82">No</label>
+                                                        </div>
+                                                        <!-- Opcion 3 -->
+                                                        <div class="wrap custom-control custom-radio custom-control-inline">
+                                                            <!-- Radio button -->
+                                                            <input type="radio" id="preguntaRadio83" name="bienestar_animal"
+                                                                class="custom-control-input" value="No responde" required>
+                                                            <!-- Texto de la opcion -->
+                                                            <label class="custom-control-label" for="preguntaRadio83">No
+                                                                responde</label>
+                                                        </div>
+                                                    </div>
 
-                                    </section>
-                                </div>
+                                            </section>
+                                    </div>
                                 <div class="col-md-1 huellas2"></div>
                             </div>
                                                  

@@ -483,7 +483,13 @@ header .contenedor_logo_menu .menu a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
 }
 
 .main .casos .progress-bar1 .paso {
@@ -661,6 +667,26 @@ footer .numero {
   }
   footer .menu a {
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 95%;
+    display: flexbox;
+    /*margin: auto;*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .progress-bar1 {
+    width: 80%;
+    display: inline-flexbox;
+  }
+  .progress-bar1 .paso {
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -209,12 +209,14 @@ header .contenedor_logo_menu .menu a {
 }
 
 .main .registrar_usuario .modal-header,
-.main .actualizar_usuario .modal-header {
+.main .actualizar_usuario .modal-header,
+.main .asignar_agente .modal-header {
   border-bottom: 1px solid rgba(0, 29, 70, 0.4);
 }
 
 .main .registrar_usuario .modal-header .modal-title,
-.main .actualizar_usuario .modal-header .modal-title {
+.main .actualizar_usuario .modal-header .modal-title,
+.main .asignar_agente .modal-header .modal-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -229,31 +231,38 @@ header .contenedor_logo_menu .menu a {
 .main .registrar_usuario .modal-body .form-row .input-group-prepend,
 .main .actualizar_usuario .modal-body .form-row input,
 .main .actualizar_usuario .modal-body .form-row select,
-.main .actualizar_usuario .modal-body .form-row .input-group-prepend {
+.main .actualizar_usuario .modal-body .form-row .input-group-prepend,
+.main .asignar_agente .modal-body .form-row input,
+.main .asignar_agente .modal-body .form-row select,
+.main .asignar_agente .modal-body .form-row .input-group-prepend {
   margin-bottom: 16px;
 }
 
 .main .registrar_usuario .modal-body .botones,
-.main .actualizar_usuario .modal-body .botones {
+.main .actualizar_usuario .modal-body .botones,
+.main .asignar_agente .modal-body .botones {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .main .registrar_usuario .modal-body .botones .btn,
-.main .actualizar_usuario .modal-body .botones .btn {
+.main .actualizar_usuario .modal-body .botones .btn,
+.main .asignar_agente .modal-body .botones .btn {
   text-align: center;
   margin: 16px 10px;
 }
 
 .main .registrar_usuario .modal-body .botones .btn-primary,
-.main .actualizar_usuario .modal-body .botones .btn-primary {
+.main .actualizar_usuario .modal-body .botones .btn-primary,
+.main .asignar_agente .modal-body .botones .btn-primary {
   border: 0px;
   background: #001D46;
 }
 
 .main .registrar_usuario .modal-body .botones .btn-primary:hover,
-.main .actualizar_usuario .modal-body .botones .btn-primary:hover {
+.main .actualizar_usuario .modal-body .botones .btn-primary:hover,
+.main .asignar_agente .modal-body .botones .btn-primary:hover {
   background: #012557;
   color: #ffffff;
 }
@@ -555,6 +564,33 @@ footer .numero {
   }
   footer .menu a {
     margin-left: 20px;
+  }
+  .form_search {
+    width: 100%;
+  }
+  input {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  table {
+    width: 100%;
+  }
+  table thead {
+    display: none;
+  }
+  table thead tbody td {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 95%;
+    display: flexbox;
+    /*margin: auto;*/
   }
 }
 /*# sourceMappingURL=estilos.css.map */

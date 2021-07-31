@@ -31,16 +31,18 @@
           </div>
         </div>
 
-        <form class = "form_search">  
-             <input class="input_form" type = "text" name = "busqueda" id = "busqueda" placeholder = "Buscar historial" required size="45">
-        </form>
-
+        <div class="col-md-12">
+            <form class = "form_search">  
+              <input class="input_form" type = "text" name = "busqueda" id = "busqueda" placeholder = "Buscar historial" required size="45">
+            </form>
+        </div>
+        
         <div class="row">
 
-          <div class="table-responsive col-12">
+          <div class="table-responsive col-md-12">
             <table class="table">
               <thead>
-                <tr class="titulos">        
+                <tr class="col-md-3 titulos">        
                   <th scope="col">ID Reporte</th>
                   <th scope="col">Fecha</th>
                   <th scope="col">Municipio</th>
@@ -65,10 +67,10 @@
                 ?>
               </tbody>
             </table>
-           <!-- Contenedor de los botones de navegacion -->
-           <div class="contenedor-btns">
-           <a class="boton detalle" href="detalle.php">Ver detalle</a>
-          </div>
+            <!-- Contenedor de los botones de navegacion -->
+            <div class="contenedor-btns">
+            <a class="boton detalle" href="detalle.php">Ver detalle</a>
+            </div>
           </div>
         </div>
       </div>

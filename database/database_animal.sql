@@ -42,13 +42,9 @@ CREATE TABLE `adjunto` (
 --
 
 CREATE TABLE `caso_maltrato` (
-  `id_caso` int(7) UNSIGNED ZEROFILL NOT NULL,
   `fk_reporte` int(7) UNSIGNED ZEROFILL NOT NULL,
   `fk_estado` int(2) UNSIGNED ZEROFILL NOT NULL,
-  `fk_adjunto` int(7) UNSIGNED ZEROFILL NOT NULL,
   `fk_usuario` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
-  `fk_departamento` int(2) UNSIGNED ZEROFILL NOT NULL,
-  `fk_municipio` int(4) UNSIGNED ZEROFILL NOT NULL,
   `nombre` varchar(70) COLLATE utf8_spanish_ci NOT NULL DEFAULT 'Nombre del caso',
   `anotaciones` text COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -253,12 +249,9 @@ ALTER TABLE `adjunto`
 -- Indices de la tabla `caso_maltrato`
 --
 ALTER TABLE `caso_maltrato`
-  ADD PRIMARY KEY (`id_caso`),
+  ADD PRIMARY KEY (`fk_reporte`),
   ADD KEY (`fk_reporte`),
-  ADD KEY (`fk_municipio`),
-  ADD KEY (`fk_departamento`),
   ADD KEY (`fk_estado`),
-  ADD KEY (`fk_adjunto`),
   ADD KEY (`fk_usuario`);
 
 --
@@ -343,11 +336,6 @@ ALTER TABLE `usuario`
 ALTER TABLE `adjunto`
   MODIFY `id_adjunto` int(7) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
 
---
--- AUTO_INCREMENT de la tabla `caso_maltrato`
---
-ALTER TABLE `caso_maltrato`
-  MODIFY `id_caso` int(7) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `reporte`
@@ -407,7 +395,7 @@ ALTER TABLE `tipo_seguimiento`
 --
 ALTER TABLE `adjunto`
   ADD CONSTRAINT `adjunto_ibfk_1` FOREIGN KEY (`fk_reporte`) REFERENCES `reporte`(`id_reporte`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `adjunto_ibfk_2` FOREIGN KEY (`fk_caso`) REFERENCES `caso_maltrato`(`id_caso`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `adjunto_ibfk_2` FOREIGN KEY (`fk_caso`) REFERENCES `caso_maltrato`(`fk_reporte`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `caso_maltrato`
@@ -415,13 +403,10 @@ ALTER TABLE `adjunto`
 ALTER TABLE `caso_maltrato`
   ADD CONSTRAINT `caso_maltrato_ibfk_1` FOREIGN KEY (`fk_reporte`) REFERENCES `reporte`(`id_reporte`),
   ADD CONSTRAINT `caso_maltrato_ibfk_2` FOREIGN KEY (`fk_estado`) REFERENCES `estado`(`id_estado`),
-  ADD CONSTRAINT `caso_maltrato_ibfk_3` FOREIGN KEY(`fk_departamento`) REFERENCES `departamento`(`id_departamento`),
-  ADD CONSTRAINT `caso_maltrato_ibfk_4` FOREIGN KEY(`fk_municipio`) REFERENCES `municipio`(`id_municipio`),
-  ADD CONSTRAINT `caso_maltrato_ibfk_5` FOREIGN KEY(`fk_adjunto`) REFERENCES `adjunto`(`id_adjunto`),
-  ADD CONSTRAINT `caso_maltrato_ibfk_6` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario`(`id_usuario`);
+  ADD CONSTRAINT `caso_maltrato_ibfk_3` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario`(`id_usuario`);
 
 --
--- Filtros para la tabla `caso_maltrato`
+-- Filtros para la tabla `reporte`
 --
 ALTER TABLE `reporte`
   ADD CONSTRAINT `reporte_ibfk_1` FOREIGN KEY (`fk_tipo_documento`) REFERENCES `tipo_documento`(`id_tipo_documento`),
@@ -439,7 +424,7 @@ ALTER TABLE `municipio`
 -- Filtros para la tabla `reporte`
 --
 ALTER TABLE `seguimiento`
-  ADD CONSTRAINT `seguimiento_ibfk_1` FOREIGN KEY (`fk_caso_maltrato`) REFERENCES `caso_maltrato`(`id_caso`),
+  ADD CONSTRAINT `seguimiento_ibfk_1` FOREIGN KEY (`fk_caso_maltrato`) REFERENCES `caso_maltrato`(`fk_reporte`),
   ADD CONSTRAINT `seguimiento_ibfk_2` FOREIGN KEY (`fk_tipo_seguimiento`) REFERENCES `tipo_seguimiento`(`id_tipo_seguimiento`),
   ADD CONSTRAINT `seguimiento_ibfk_3` FOREIGN KEY (`fk_usuario`) REFERENCES `usuario`(`id_usuario`);
 

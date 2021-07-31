@@ -15,8 +15,7 @@
 
 <body>
   <?php
-     require_once("../../controller/historial_admin_controler.php");
-                                                       
+     require_once("../../controller/historial_admin_controler.php");                                                       
   ?>
   <header></header>
 

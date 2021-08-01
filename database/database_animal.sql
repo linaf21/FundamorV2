@@ -31,7 +31,6 @@ USE database_animal;
 CREATE TABLE `adjunto` (
   `id_adjunto` int(7) UNSIGNED ZEROFILL NOT NULL,
   `fk_reporte` int(7) UNSIGNED ZEROFILL NOT NULL,
-  `fk_caso` int(7) UNSIGNED ZEROFILL NOT NULL,
   `url` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -45,7 +44,7 @@ CREATE TABLE `caso_maltrato` (
   `fk_reporte` int(7) UNSIGNED ZEROFILL NOT NULL,
   `fk_estado` int(2) UNSIGNED ZEROFILL NOT NULL,
   `fk_usuario` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
-  `nombre` varchar(70) COLLATE utf8_spanish_ci NOT NULL DEFAULT 'Nombre del caso',
+  `nombre` varchar(70) COLLATE utf8_spanish_ci NOT NULL,
   `anotaciones` text COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
@@ -58,15 +57,15 @@ CREATE TABLE `caso_maltrato` (
 CREATE TABLE `reporte` (
   `id_reporte` int(7) UNSIGNED ZEROFILL NOT NULL,
   `fecha_reporte` timestamp NOT NULL DEFAULT current_timestamp(),
-  `fk_tipo_documento` int(2) UNSIGNED ZEROFILL NOT NULL,
-  `fk_adjunto` int(7) UNSIGNED ZEROFILL NOT NULL,
-  `nombres_denunciante` varchar(25) NOT NULL,
-  `apellidos_denunciante` varchar(25) NOT NULL,
-  `documento_identidad_denunciante` varchar(15) NOT NULL,
-  `email_denunciante` varchar(50) NOT NULL,
-  `telefono_denunciante` varchar(15) DEFAULT NULL,
+  `fk_tipo_documento` int(2) UNSIGNED ZEROFILL,
+  `fk_adjunto` int(7) UNSIGNED ZEROFILL,
+  `nombres_denunciante` varchar(25),
+  `apellidos_denunciante` varchar(25),
+  `documento_identidad_denunciante` varchar(15),
+  `email_denunciante` varchar(50),
+  `telefono_denunciante` varchar(15),
   `descripcion` text COLLATE utf8_spanish_ci NOT NULL,
-  `fk_departamento` int(2) UNSIGNED ZEROFILL NOT NULL,
+  `fk_departamento` int(2) UNSIGNED ZEROFILL,
   `fk_municipio` int(4) UNSIGNED ZEROFILL NOT NULL,
   `direccion` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `hambre_sed` varchar(11) NOT NULL,
@@ -243,8 +242,7 @@ CREATE TABLE `usuario` (
 --
 ALTER TABLE `adjunto`
   ADD PRIMARY KEY (`id_adjunto`),
-  ADD KEY (`fk_reporte`),
-  ADD KEY (`fk_caso`);
+  ADD KEY (`fk_reporte`);
 
 -- Indices de la tabla `caso_maltrato`
 --
@@ -394,8 +392,7 @@ ALTER TABLE `tipo_seguimiento`
 -- Filtros para la tabla `adjunto`
 --
 ALTER TABLE `adjunto`
-  ADD CONSTRAINT `adjunto_ibfk_1` FOREIGN KEY (`fk_reporte`) REFERENCES `reporte`(`id_reporte`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `adjunto_ibfk_2` FOREIGN KEY (`fk_caso`) REFERENCES `caso_maltrato`(`fk_reporte`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `adjunto_ibfk_1` FOREIGN KEY (`fk_reporte`) REFERENCES `reporte`(`id_reporte`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `caso_maltrato`

@@ -20,25 +20,25 @@
         {   
             $id_reporte=null;
             $fecha=null;
-            $municipio = $_POST["select_usuario"];
+            $municipio = $_GET["select_usuario"];
             $adjunto=null;
             $departamento = null;
-            $direccion = $_POST["direccion"];
-            $descripcion = $_POST["descripcion_reporte"];
-            $nombres = $_POST["nombres_denunciante"];
-            $apellidos = $_POST["apellidos_denunciante"];
-            $tipo_documento = $_POST["tipo_documento"];
-            $documento =(int)$_POST["documento_identidad_denunciante"];
-            $email = $_POST["email_denunciante"];
-            $telefono =(int)$_POST["telefono_denunciante"];
-            $v1 = $_POST["hambre_sed"];
-            $v2 = $_POST["malestar_fisico"];
-            $v3 = $_POST["negligencia"];
-            $v4 = $_POST["miedo_estres"];
-            $v5 = $_POST["comportamiento_natural"];
-            $v6 = $_POST["agresion_fisica"];
-            $v7 = $_POST["agresion_verbal"];
-            $v8 = $_POST["bienestar_animal"];
+            $direccion = $_GET["direccion"];
+            $descripcion = $_GET["descripcion_reporte"];
+            $nombres = $_GET["nombres_denunciante"];
+            $apellidos = $_GET["apellidos_denunciante"];
+            $tipo_documento = $_GET["tipo_documento"];
+            $documento =(int)$_GET["documento_identidad_denunciante"];
+            $email = $_GET["email_denunciante"];
+            $telefono =(int)$_GET["telefono_denunciante"];
+            $v1 = $_GET["hambre_sed"];
+            $v2 = $_GET["malestar_fisico"];
+            $v3 = $_GET["negligencia"];
+            $v4 = $_GET["miedo_estres"];
+            $v5 = $_GET["comportamiento_natural"];
+            $v6 = $_GET["agresion_fisica"];
+            $v7 = $_GET["agresion_verbal"];
+            $v8 = $_GET["bienestar_animal"];
             $sql= $this->db->prepare("INSERT INTO reporte (id_reporte, fecha_reporte, fk_tipo_documento, fk_adjunto, nombres_denunciante, 
             apellidos_denunciante, documento_identidad_denunciante, email_denunciante, telefono_denunciante, descripcion, fk_departamento, 
             fk_municipio, direccion, hambre_sed, malestar_fisico, negligencia, miedo_estres, comportamiento_natural, agresion_fisica, 

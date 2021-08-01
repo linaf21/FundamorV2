@@ -27,7 +27,7 @@
             $adjunto=null;
             $departamento = null;
             $direccion = $_POST["direccion"];
-            $descripcion = $_POST["descripcion_reporte"];
+            $descripcion = $_GET["descripcion_reporte"];
             $nombres = $_POST["nombres_denunciante"];
             $apellidos = $_POST["apellidos_denunciante"];
             $tipo_documento = $_POST["tipo_documento"];

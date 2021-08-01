@@ -56,6 +56,7 @@
                         <div class="contenedor-btns">
                             <a class="boton informacion" id="btn-informacion" href="#">Información</a>
                             <a class="boton denunciar" href="view/user/denuncia.php">Denunciar</a>
+                            <a class="boton denunciar" href="view/admin/admin_users.php">Usuarios</a>
                         </div>
                     </div>
 

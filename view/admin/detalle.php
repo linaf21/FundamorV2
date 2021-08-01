@@ -382,7 +382,7 @@
                                                                     <!-- Opciones de respuesta para la pregunta 8 -->
                                                                     <div class="form-row" id="pregunta8">
                                                                         <!-- Opcion 2 -->
-                                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                                        <div class="wrap custom-control custom-radio custom-control-inline">
                                                                             <!-- Radio button -->
                                                                             <input type="radio" id="preguntaRadio81" name="preguntaRadio8"
                                                                                 class="custom-control-input">
@@ -391,7 +391,7 @@
                                                                         </div>
 
                                                                         <!-- Opcion 2 -->
-                                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                                        <div class="wrap custom-control custom-radio custom-control-inline">
                                                                             <!-- Radio button -->
                                                                             <input type="radio" id="preguntaRadio82" name="preguntaRadio8"
                                                                                 class="custom-control-input">
@@ -399,7 +399,7 @@
                                                                             <label class="custom-control-label" for="preguntaRadio82">No</label>
                                                                         </div>
                                                                         <!-- Opcion 3 -->
-                                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                                        <div class="wrap custom-control custom-radio custom-control-inline">
                                                                             <!-- Radio button -->
                                                                             <input type="radio" id="preguntaRadio83" name="preguntaRadio8"
                                                                                 class="custom-control-input">

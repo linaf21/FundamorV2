@@ -157,75 +157,6 @@ header .contenedor_logo_menu .menu a {
           transition-duration: 0.1s;
 }
 
-.main .detalle .progress-bar1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px 0;
-}
-
-.main .detalle .progress-bar1 .paso {
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-}
-
-.main .detalle .progress-bar1 .paso p {
-  font-size: 17px;
-  font-weight: 500;
-  color: #000;
-  margin-bottom: 8px;
-}
-
-.main .detalle .progress-bar1 .paso .num {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 25px;
-}
-
-.main .detalle .progress-bar1 .paso .num span {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 25px;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.main .detalle .progress-bar1 .paso .num:before {
-  position: absolute;
-  content: '';
-  width: 100px;
-  height: 3px;
-  bottom: 11px;
-  right: -150px;
-  background-color: #001D46;
-}
-
-.main .detalle .progress-bar1 .paso .num:after {
-  position: absolute;
-  content: '';
-  width: 100px;
-  height: 3px;
-  bottom: 11px;
-  right: -150px;
-  background-color: #001D46;
-}
-
-.main .detalle .progress-bar1 .paso:last-child .num:before {
-  display: none;
-}
-
-.main .detalle .progress-bar1 .paso:last-child .num:after {
-  display: none;
-}
-
 .main .detalle .texto .titulo {
   text-align: center;
   font-family: 'Alegreya', serif;
@@ -434,6 +365,90 @@ footer .numero {
   }
   footer .menu a {
     margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  table {
+    width: 100%;
+  }
+  table thead {
+    display: none;
+  }
+  table thead tbody td {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 95%;
+    display: flexbox;
+    /*margin: auto;*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .detalle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0;
+  }
+  .detalle .paso {
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+  }
+  .detalle .paso p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  .detalle .paso .num {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .detalle .paso .num span {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .detalle .paso .num:before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    bottom: 11px;
+    right: -150px;
+    background-color: #001D46;
+  }
+  .detalle .paso .num:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    bottom: 11px;
+    right: -150px;
+    background-color: #001D46;
+  }
+  .detalle .paso:last-child .num:before {
+    display: none;
+  }
+  .detalle .paso:last-child .num:after {
+    display: none;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

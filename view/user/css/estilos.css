@@ -677,16 +677,4 @@ footer .numero {
     /*margin: auto;*/
   }
 }
-
-@media screen and (max-width: 600px) {
-  .progress-bar1 {
-    width: 80%;
-    display: inline-flexbox;
-  }
-  .progress-bar1 .paso {
-    width: 100%;
-    position: relative;
-    margin: 10px 0;
-  }
-}
 /*# sourceMappingURL=estilos.css.map */

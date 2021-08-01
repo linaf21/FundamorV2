@@ -46,6 +46,7 @@
 
             if ($sql=== false) 
             {
+                echo "<script> alert('".$fecha."'); </script>";
                 print_r($sql) ;
                 print_r($this->db->error);
             }

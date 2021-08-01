@@ -17,15 +17,15 @@
 
         public function set_usuarios()
         {
-            $id_usuario = $_POST["documento_identidad"];
-            $nombres = $_POST["nombres"];
-            $apellidos= $_POST["apellidos"];
-            $tipo_documento = $_POST["tipo_documento"];
-            $documento_identidad = $_POST["documento_identidad"];
-            $rol = $_POST["rol"];
-            $email = $_POST["email"];
-            $telefono = $_POST["telefono"];
-            $password = password_hash($_POST['password'], PASSWORD_BCRYPT);   
+            $id_usuario = $_GET["documento_identidad"];
+            $nombres = $_GET["nombres"];
+            $apellidos= $_GET["apellidos"];
+            $tipo_documento = $_GET["tipo_documento"];
+            $documento_identidad = $_GET["documento_identidad"];
+            $rol = $_GET["rol"];
+            $email = $_GET["email"];
+            $telefono = $_GET["telefono"];
+            $password = password_hash($_GET['password'], PASSWORD_BCRYPT);   
             $estado = null;
             $fecha=date('Y-m-d H:i:s'); 
 

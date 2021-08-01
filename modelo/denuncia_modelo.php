@@ -15,7 +15,9 @@
             $this->municipios=array();
             $this->documentos=array();
         }
-
+        function phpAlert($msg) {
+            echo '<script type="text/javascript">alert("' . $msg . '")</script>';
+        }
         
         public function set_reporte()
         {   
@@ -54,6 +56,7 @@
             $sql->bind_param('isisssssssiisssssssss',$id_reporte,$fecha,$tipo_documento,$adjunto,$nombres,$apellidos,$documento,$email,$telefono,$descripcion,
             $departamento,$municipio,$direccion,$v1,$v2,$v3,$v4,$v5,$v6,$v7,$v8);
             $sql->execute();
+            phpAlert($sql);
         }
         public function get_municipios()
         {

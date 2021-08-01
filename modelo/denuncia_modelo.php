@@ -18,9 +18,7 @@
 
         
         public function set_reporte()
-        {
-            
-            echo '<script language="javascript">alert("HOLA");</script>';
+        {   
             $id_reporte=null;
             $fecha=null;
             $municipio = $_POST["select_usuario"];
@@ -49,7 +47,6 @@
 
             if ($sql=== false) 
             {
-                 echo '<script language="javascript">alert("alo");</script>';
                 print_r($sql) ;
                 print_r($this->db->error);
             }
@@ -57,7 +54,6 @@
             $sql->bind_param('isisssssssiisssssssss',$id_reporte,$fecha,$tipo_documento,$adjunto,$nombres,$apellidos,$documento,$email,$telefono,$descripcion,
             $departamento,$municipio,$direccion,$v1,$v2,$v3,$v4,$v5,$v6,$v7,$v8);
             $sql->execute();
-           
         }
         public function get_municipios()
         {

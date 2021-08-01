@@ -5,7 +5,7 @@
         {
             try
             {
-                $conexion = mysqli_connect("database-animal.cwya5ptaphcc.us-east-2.rds.amazonaws.com","admin","fundamor","database_animal");
+                $conexion = mysqli_connect("database-animal.cwya5ptaphcc.us-east-2.rds.amazonaws.com","admin","fundamor","database_animal",3306);
                 mysqli_set_charset($conexion,"utf8");
             }
             catch(Exception $e)

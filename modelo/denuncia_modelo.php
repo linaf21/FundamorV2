@@ -19,8 +19,6 @@
         
         public function set_reporte()
         {
-            
-            echo '<script language="javascript">alert("HOLA");</script>';
             $id_reporte=null;
             $fecha=null;
             $municipio = $_POST["select_usuario"];

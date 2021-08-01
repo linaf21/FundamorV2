@@ -42,7 +42,7 @@
             $v6 = $_POST["agresion_fisica"];
             $v7 = $_POST["agresion_verbal"];
             $v8 = $_POST["bienestar_animal"];
-
+            echo '<script language="javascript">alert($descripcion);</script>';
             $sql= $this->db->prepare("INSERT INTO reporte (id_reporte, fecha_reporte, fk_tipo_documento, fk_adjunto, nombres_denunciante, 
             apellidos_denunciante, documento_identidad_denunciante, email_denunciante, telefono_denunciante, descripcion, fk_departamento, 
             fk_municipio, direccion, hambre_sed, malestar_fisico, negligencia, miedo_estres, comportamiento_natural, agresion_fisica, 

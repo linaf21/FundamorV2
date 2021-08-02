@@ -77,7 +77,7 @@
                 <div class="row contenedor-formulario">
                     <div class="col-md-12">
                         <!-- Formulario de denuncia animal-->
-                        <form name="formularioDenuncia"  method="get"
+                        <form name="formularioDenuncia"  method="post"
                          class="needs-validation contenido-formulario" novalidate>
                         <!-- Titulo para la seccion informacion adicional -->
                         <div class="form-row">

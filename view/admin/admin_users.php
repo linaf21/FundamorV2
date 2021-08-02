@@ -45,7 +45,7 @@
                   <th scope="col">No. identificación</th>
                   <th scope="col">Nombre Completo</th>
                   <th scope="col">Correo electrónico</th>
-                  <th scope="col">Estado</th>
+                  <th scope="col">Rol</th>
                   <th scope="col">Acciones</th>
                 </tr>
               </thead>

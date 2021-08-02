@@ -17,20 +17,19 @@
 
         public function set_usuarios()
         {
-            $id_usuario = $_GET["documento_identidad"];
-            $nombres = $_GET["nombres"];
-            $apellidos= $_GET["apellidos"];
-            $tipo_documento = $_GET["tipo_documento"];
-            $documento_identidad = $_GET["documento_identidad"];
-            $rol = $_GET["rol"];
-            $email = $_GET["email"];
-            $telefono = $_GET["telefono"];
-            $password = password_hash($_GET['password'], PASSWORD_BCRYPT);   
-            $estado = null;
+            $id_usuario = $_POST["documento_identidad"];
+            $nombres = $_POST["nombres"];
+            $apellidos= $_POST["apellidos"];
+            $tipo_documento = $_POST["tipo_documento"];
+            $documento_identidad = $_POST["documento_identidad"];
+            $rol = $_POST["rol"];
+            $email = $_POST["email"];
+            $telefono = $_POST["telefono"];
+            $password = password_hash($_POST['password'], PASSWORD_BCRYPT);   
             $fecha=date('Y-m-d H:i:s'); 
 
             $sql= $this->db->prepare("INSERT INTO usuario(id_usuario, fk_tipo_documento, fk_rol, password, nombres, apellidos, 
-            documento_identidad, email, telefono, estado, registro_ultimo_acceso) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+            documento_identidad, email, telefono,  registro_ultimo_acceso) VALUES (?,?,?,?,?,?,?,?,?,?)");
 
             if ($sql=== false) 
             {
@@ -38,9 +37,21 @@
                 print_r($this->db->error);
             }
 
-            $sql->bind_param('siissssssss', $id_usuario, $tipo_documento, $rol, $password, $nombres, $apellidos, $documento_identidad,
-            $email, $telefono,  $estado, $fecha);
-            $sql->execute();
+            $sql->bind_param('siisssssss', $id_usuario, $tipo_documento, $rol, $password, $nombres, $apellidos, $documento_identidad,
+            $email, $telefono, $fecha);
+            try
+            {
+                $sql->execute();
+            }
+            if()
+            {
+
+                echo "<script> alert('Usuario agregado'); </script>";
+            }
+            else
+            {
+                echo "Falló la ejecución: (" . $sql->errno . ") " . $sql->error;
+            }
         }   
 
         public function get_roles()
@@ -67,7 +78,7 @@
 
         public function get_usuarios()
         {
-            $consulta = "SELECT id_usuario, CONCAT_WS(' ',nombres,apellidos), email, estado FROM usuario ORDER BY registro_ultimo_acceso DESC";
+            $consulta = "SELECT u.id_usuario, CONCAT_WS(' ',u.nombres,u.apellidos), u.email, r.descripcion FROM usuario u LEFT JOIN rol r ON u.fk_rol = r.id_rol ORDER BY registro_ultimo_acceso DESC";
             $resultado = $this->db->query($consulta);
             
             while ($valores = mysqli_fetch_array($resultado)) 

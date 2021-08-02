@@ -9,11 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/3b5ef9eb52.js" crossorigin="anonymous"></script>
-    <!--font-family: 'Alegreya', serif;-->
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- font-family: 'Lato', sans-serif; -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="view/user/css/estilos.css">
     <title>Denunciar Maltrato Animal</title>
@@ -90,7 +85,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="view/user/img/gallo.png" alt="">
+                            <img class="foto" src="view/user/img/gallo.jpeg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">Manejo de denuncias</h4>
                             <!-- Descripcion -->
@@ -107,7 +102,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="view/user/img/gato_sofa.jpg" alt="">
+                            <img class="foto" src="view/user/img/gato_sofa.jpeg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">¿Mascotas y COVID?</h4>
                             <!-- Descripcion -->
@@ -123,7 +118,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="view/user/img/perro_libro.jpg" alt="">
+                            <img class="foto" src="view/user/img/perro_libro.jpeg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">Documentos legales</h4>
                             <!-- Descripcion -->
@@ -156,20 +151,20 @@
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="view/user/img/gato_casos.jpg" alt="">
+                        <img src="view/user/img/gato_casos.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Casos de abuso al año</h4>
                         <!-- Descripcion de la estadistica -->
                         <p class="texto">Cada año se presentan mas de 100 mil casos de abuso animal en Colombia</p>
                         <!-- Boton ir a la fuente -->
                         <a href="https://elclubmascotas.com/blog/cuales-son-las-cifras-del-maltrato-animal-en-colombia#:~:text=¿Cuáles%20son%20las%20cifras%20del,sufrieron%20algún%20tipo%20de%20violencia."
-                            target="_blank" class="enlace">ir a la fuente <i class="fas fa-arrow-right"></i></a>
+                            target="_blank" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="view/user/img/gato_calle.jpg" alt="">
+                        <img src="view/user/img/gato_calle.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Animales en condición de calle</h4>
                         <!-- Descripcion de la estadistica -->
@@ -177,13 +172,13 @@
                             calle</p>
                         <!-- Boton ir a la fuente -->
                         <a href="https://www.uniminutoradio.com.co/en-colombia-hay-mas-de-un-millon-de-animales-en-la-calle/"
-                            target="_blank" class="enlace">ir a la fuente <i class="fas fa-arrow-right"></i></a>
+                            target="_blank" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="view/user/img/perro_veterinario.jpg" alt="">
+                        <img src="view/user/img/perro_veterinario.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Animales atendidos</h4>
                         <!-- Descripcion de la estadistica -->
@@ -191,7 +186,7 @@
                             violencia</p>
                         <!-- Boton ir a la fuente -->
                         <a href="https://elclubmascotas.com/blog/cuales-son-las-cifras-del-maltrato-animal-en-colombia#:~:text=¿Cuáles%20son%20las%20cifras%20del,sufrieron%20algún%20tipo%20de%20violencia."
-                            target="_blank" class="enlace">ir a la fuente <i class="fas fa-arrow-right"></i></a>
+                            target="_blank" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

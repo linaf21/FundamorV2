@@ -248,9 +248,10 @@ header .contenedor_logo_menu .menu a {
 }
 
 .main .estadisticas .estadistica .enlace {
-  font-size: 16;
-  color: #a4a4a4;
+  font-size: 26;
+  color: #001D46;
   margin-bottom: 30px;
+  font-weight: 800;
 }
 
 .main .estadisticas .estadistica .enlace:hover {

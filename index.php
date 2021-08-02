@@ -75,7 +75,7 @@
                 <div class="row">
                     <!-- Contenedor y titulo -->
                     <div class="col-md-12">
-                        <h3 class="titulo-principal">Conoce más</h3>
+                        <h1 class="titulo-principal">Conoce más</h1>
                     </div>
                 </div>
 

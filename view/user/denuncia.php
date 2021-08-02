@@ -72,7 +72,7 @@
                 <div class="row contenedor-formulario">
                     <div class="col-md-12">
                         <!-- Formulario de denuncia animal-->
-                        <form name="formularioDenuncia"  method="post"
+                        <form name="formularioDenuncia"  method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"
                          class="needs-validation contenido-formulario" novalidate>
                         <!-- Titulo para la seccion informacion adicional -->
                         <div class="form-row">
@@ -92,7 +92,7 @@
                                             <!-- Tipo de documento -->
                                             <div class="col-md-4">
                                                 <select  class="form-control" id="select_usuario" name="select_usuario">
-                                                    <option value="">Municipio</option>                                                     
+                                                    <option  value="">Municipio</option>                                                     
                                                     <?php
                                                         foreach($matrizMunicipios as $registro)
                                                         {
@@ -135,7 +135,7 @@
                                             <div class="col-12">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value=""
-                                                        id="invalidCheck" required>
+                                                        id="invalidCheck">
                                                     <label class="form-check-label" for="invalidCheck">
                                                         He leído y acepto los términos y condiciones
                                                     </label>
@@ -520,7 +520,8 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/util.js"></script>
+    <script src="js/util.js"></script>    
+    <script src="js/validaciones.js"></script>
 
 </body>
 

@@ -87,7 +87,7 @@
                             <!-- Imagen -->
                             <img class="foto" src="view/user/img/gallo.jpeg" alt="">
                             <!-- Titulo -->
-                            <h4 class="titulo">Manejo de denuncias</h4>
+                            <h1 class="titulo">Manejo de denuncias</h1>
                             <!-- Descripcion -->
                             <p class="texto">Conozca la guía para manejo de denuncias en casos de maltrato animal y
                                 aprenda
@@ -104,7 +104,7 @@
                             <!-- Imagen -->
                             <img class="foto" src="view/user/img/gato_sofa.jpeg" alt="">
                             <!-- Titulo -->
-                            <h4 class="titulo">¿Mascotas y COVID?</h4>
+                            <h1 class="titulo">¿Mascotas y COVID?</h1>
                             <!-- Descripcion -->
                             <p class="texto">Infórmese acerca del porque "MinSalud rechaza el abandono de animales de
                                 compañía por desconocimiento sobre COVID-19".</p>
@@ -120,7 +120,7 @@
                             <!-- Imagen -->
                             <img class="foto" src="view/user/img/perro_libro.jpeg" alt="">
                             <!-- Titulo -->
-                            <h4 class="titulo">Documentos legales</h4>
+                            <h1 class="titulo">Documentos legales</h1>
                             <!-- Descripcion -->
                             <p class="texto">Conozca más acerca de la ley 1774 de 2016 y el decreto 2113 de 2017 sobre
                                 derechos y protección a la integridad física y emocional de los animales.</p>
@@ -142,7 +142,7 @@
                 <div class="row">
                     <!-- Contenedor y titulo -->
                     <div class="col-md-12">
-                        <h3 class="titulo">Estadísticas</h3>
+                        <h1 class="titulo">Estadísticas</h1>
                     </div>
                 </div>
 
@@ -153,7 +153,7 @@
                         <!-- Foto e informacion de la estadisctica -->
                         <img src="view/user/img/gato_casos.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
-                        <h4 class="primera_linea">Casos de abuso al año</h4>
+                        <h1 class="primera_linea">Casos de abuso al año</h1>
                         <!-- Descripcion de la estadistica -->
                         <p class="texto">Cada año se presentan mas de 100 mil casos de abuso animal en Colombia</p>
                         <!-- Boton ir a la fuente -->
@@ -166,7 +166,7 @@
                         <!-- Foto e informacion de la estadisctica -->
                         <img src="view/user/img/gato_calle.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
-                        <h4 class="primera_linea">Animales en condición de calle</h4>
+                        <h1 class="primera_linea">Animales en condición de calle</h1>
                         <!-- Descripcion de la estadistica -->
                         <p class="texto">Se estima que en el país hay mas de un millón de perros y gatos en situación de
                             calle</p>
@@ -180,7 +180,7 @@
                         <!-- Foto e informacion de la estadisctica -->
                         <img src="view/user/img/perro_veterinario.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
-                        <h4 class="primera_linea">Animales atendidos</h4>
+                        <h1 class="primera_linea">Animales atendidos</h1>
                         <!-- Descripcion de la estadistica -->
                         <p class="texto">En 2019 se atendieron más de 3.289 animales que sufrieron algún tipo de
                             violencia</p>
@@ -202,7 +202,7 @@
                 <div class="row">
                     <!-- Contenedor y titulo -->
                     <div class="col-12">
-                        <h3 class="titulo">CAI's en el Quindío</h3>
+                        <h1 class="titulo">CAI's en el Quindío</h1>
                     </div>
                 </div>
 

@@ -4,8 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no,
-    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -43,9 +43,9 @@
                     <!-- Contenedor de la descripcion -->
                     <div class="col-12 col-lg-6">
                         <!-- Descripcion principal de la pagina -->
-                        <h3 class="sub_parrafo">Denuncia aquí los casos de maltrato animal que se presenten en el
+                        <h1 class="sub_parrafo">Denuncia aquí los casos de maltrato animal que se presenten en el
                             departamento del Quindío,
-                            además, infórmate sobre las leyes de protección animal en Colombia </h3>
+                            además, infórmate sobre las leyes de protección animal en Colombia </h1>
 
                         <!-- Contenedor de los botones de navegacion -->
                         <div class="contenedor-btns">
@@ -211,7 +211,7 @@
                     <!-- Contenedor del mapa con ubicaciones de los cais -->
                     <div class="ubicacion col-12 col-lg-8 ">
                         <!-- Mapa -->
-                        <iframe
+                        <iframe title="Mapas con ubicaciones de los cais"
                             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d47673.68145912576!2d-75.70294664173012!3d4.540698621871882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCAI%20quindio!5e0!3m2!1ses!2sco!4v1603682689065!5m2!1ses!2sco"
                             width="500" height="340" frameborder="0" style="border:0;" allowfullscreen=""
                             aria-hidden="false" tabindex="0"></iframe>

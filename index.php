@@ -94,7 +94,7 @@
                                 tomar decisiones acorde a las normativas vigentes.</p>
                             <!-- Boton "ver detalles" -->
                             <a href="https://www.mininterior.gov.co/sites/default/files/documentos/guia_para_publicacion_v.pdf"
-                                target="_blank">Ver más</a>
+                                target="_blank" rel="noopener" >Ver más</a>
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@
                                 compañía por desconocimiento sobre COVID-19".</p>
                             <!-- Boton "ver detalles" -->
                             <a href="https://www.minsalud.gov.co/Paginas/MinSalud-rechaza-abandono-de-animales-de-compania-por-desconocimiento-sobre-COVID-19.aspx"
-                                target="_blank">Ver más</a>
+                                target="_blank" rel="noopener">Ver más</a>
                         </div>
                     </div>
 
@@ -126,7 +126,7 @@
                                 derechos y protección a la integridad física y emocional de los animales.</p>
                             <!-- Boton "ver detalles" -->
                             <a href="http://es.presidencia.gov.co/normativa/normativa/LEY%201774%20DEL%206%20DE%20ENERO%20DE%202016.pdf"
-                                target="_blank">Ver más</a>
+                                target="_blank" rel="noopener">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                         <p class="texto">Cada año se presentan mas de 100 mil casos de abuso animal en Colombia</p>
                         <!-- Boton ir a la fuente -->
                         <a href="https://elclubmascotas.com/blog/cuales-son-las-cifras-del-maltrato-animal-en-colombia#:~:text=¿Cuáles%20son%20las%20cifras%20del,sufrieron%20algún%20tipo%20de%20violencia."
-                            target="_blank" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
+                            target="_blank" rel="noopener" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Contenedor recuadro de estadisticas -->
@@ -172,7 +172,7 @@
                             calle</p>
                         <!-- Boton ir a la fuente -->
                         <a href="https://www.uniminutoradio.com.co/en-colombia-hay-mas-de-un-millon-de-animales-en-la-calle/"
-                            target="_blank" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
+                            target="_blank" rel="noopener" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Contenedor recuadro de estadisticas -->
@@ -186,7 +186,7 @@
                             violencia</p>
                         <!-- Boton ir a la fuente -->
                         <a href="https://elclubmascotas.com/blog/cuales-son-las-cifras-del-maltrato-animal-en-colombia#:~:text=¿Cuáles%20son%20las%20cifras%20del,sufrieron%20algún%20tipo%20de%20violencia."
-                            target="_blank" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
+                            target="_blank" rel="noopener" class="enlace">Ir a la fuente <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

@@ -60,7 +60,7 @@
             }
             else
             {
-                echo "<script> alert('""Falló la ejecución: (" . $sql->errno . ") " . $sql->error"'); </script>";
+                echo "Falló la ejecución: (" . $sql->errno . ") " . $sql->error;
             }
         }
         public function get_municipios()

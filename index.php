@@ -85,7 +85,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="view/user/img/gallo.avif" alt="">
+                            <img class="foto" src="view/user/img/gallo.jpeg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">Manejo de denuncias</h4>
                             <!-- Descripcion -->
@@ -102,7 +102,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="view/user/img/gato_sofa.avif" alt="">
+                            <img class="foto" src="view/user/img/gato_sofa.jpeg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">¿Mascotas y COVID?</h4>
                             <!-- Descripcion -->
@@ -118,7 +118,7 @@
                     <div class="informacion col-lg-4">
                         <div class="recuadro">
                             <!-- Imagen -->
-                            <img class="foto" src="view/user/img/perro_libro.avif" alt="">
+                            <img class="foto" src="view/user/img/perro_libro.jpeg" alt="">
                             <!-- Titulo -->
                             <h4 class="titulo">Documentos legales</h4>
                             <!-- Descripcion -->
@@ -151,7 +151,7 @@
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="view/user/img/gato_casos.avif" alt="">
+                        <img src="view/user/img/gato_casos.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Casos de abuso al año</h4>
                         <!-- Descripcion de la estadistica -->
@@ -164,7 +164,7 @@
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="view/user/img/gato_calle.avif" alt="">
+                        <img src="view/user/img/gato_calle.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Animales en condición de calle</h4>
                         <!-- Descripcion de la estadistica -->
@@ -178,7 +178,7 @@
                     <!-- Contenedor recuadro de estadisticas -->
                     <div class="col-12 col-lg-4 estadistica">
                         <!-- Foto e informacion de la estadisctica -->
-                        <img src="view/user/img/perro_veterinario.avif" alt="">
+                        <img src="view/user/img/perro_veterinario.jpeg" alt="">
                         <!-- Titulo de la estadistica -->
                         <h4 class="primera_linea">Animales atendidos</h4>
                         <!-- Descripcion de la estadistica -->

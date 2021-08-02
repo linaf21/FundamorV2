@@ -39,11 +39,7 @@
 
             $sql->bind_param('siisssssss', $id_usuario, $tipo_documento, $rol, $password, $nombres, $apellidos, $documento_identidad,
             $email, $telefono, $fecha);
-            try
-            {
-                $sql->execute();
-            }
-            if()
+            if($sql->execute();)
             {
 
                 echo "<script> alert('Usuario agregado'); </script>";

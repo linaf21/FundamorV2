@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/3b5ef9eb52.js" crossorigin="anonymous"></script>
   <title>Historial</title>
 </head>
 
@@ -46,7 +47,8 @@
                   <th scope="col">Fecha</th>
                   <th scope="col">Municipio</th>
                   <th scope="col">Dirección</th>
-                  <th scope="col">Detalle</th>        
+                  <th scope="col">Detalle</th>  
+                  <th scope="col">Acciones</th>      
                 </tr>
               </thead>
               <tbody>
@@ -60,6 +62,11 @@
                   <th><?php echo $registro[2]?></th>
                   <th><?php echo $registro[3]?></th>
                   <th><?php echo $registro[4]?></th>
+                  <th class="botones">
+                    <a href="detalle.php" class="btn btn-link" >
+                      <i class="far fa-eye"></i>
+                  </a>
+                  </th>
                 </tr>
                 <?php
                   }

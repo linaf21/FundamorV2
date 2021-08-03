@@ -303,7 +303,7 @@ header .contenedor_logo_menu .menu a {
   font-weight: 700;
   font-size: 32px;
   color: #001D46;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .main .formulario .contenedor-formulario .huellas {
@@ -383,7 +383,7 @@ header .contenedor_logo_menu .menu a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .main .formulario .contenedor-formulario .contenido-formulario .boton .btn-primary {
@@ -395,6 +395,26 @@ header .contenedor_logo_menu .menu a {
 }
 
 .main .formulario .contenedor-formulario .contenido-formulario .boton .btn-primary:hover {
+  background: #012557;
+  color: #ffffff;
+}
+
+.main .formulario .boton-anonimo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main .formulario .boton-anonimo .btn-primary {
+  border: 0px;
+  background: #001D46;
+  padding: 12px 0;
+  font-weight: 500;
+  width: 150px;
+}
+
+.main .formulario .boton-anonimo .btn-primary:hover {
   background: #012557;
   color: #ffffff;
 }

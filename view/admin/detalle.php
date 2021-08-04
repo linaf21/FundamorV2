@@ -246,7 +246,7 @@
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                                                             <button class="btn btn-primary" type="submit" id="submit_button" name="submit_button"  >Asignar</button>
                                                             <?php
-                                                                if($cantidadCasos>0)
+                                                                if($cantidadCasos[0]>0)
                                                                 {
                                                             ?>
                                                                     <script>

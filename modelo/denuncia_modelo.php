@@ -74,7 +74,7 @@
         }
         public function get_documentos()
         {
-            $consulta = "SELECT COUNT(*) FROM `tipo_documento` ORDER BY `id_tipo_documento`";
+            $consulta = "SELECT * FROM `tipo_documento` ORDER BY `id_tipo_documento`";
             $resultado = $this->db->query($consulta);
             while ($valores = mysqli_fetch_array($resultado)) 
             {

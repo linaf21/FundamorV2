@@ -235,7 +235,7 @@
                                                                     <?php
                                                                         foreach($matrizAgentes as $registro)
                                                                         {
-                                                                            echo '<option value="'.$registro["id_tipo_documento"].'">'.$registro["descripcion"].'</option>';
+                                                                            echo '<option value="'.$registro["id_usuario"].'">'.$registro["nombres"]." ".$registro["apellidos"].'</option>';
                                                                         } 
                                                                     ?>
                                                                 </select>
@@ -245,7 +245,17 @@
                                                         <!-- Fila de botones -->
                                                         <div class="form-row botones">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                                            <button class="btn btn-primary" type="submit" name="submit_button" @click="createUser()">Asignar</button>
+                                                            <button class="btn btn-primary" type="submit" id="submit_button" name="submit_button"  >Asignar</button>
+                                                            <?php
+                                                                if($cantidadCasos[0]>0)
+                                                                {
+                                                            ?>
+                                                                    <script>
+                                                                    document.getElementById('submit_button').disabled=true;
+                                                                    </script>
+                                                            <?php
+                                                                }
+                                                            ?>
                                                         </div>
                                                 </form>
                                             </div>

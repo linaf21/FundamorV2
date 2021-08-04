@@ -24,7 +24,6 @@
             $consulta->bind_param('i',$id);
             if($consulta->execute())
             {
-                echo "<script> alert('Reporte agregado'); </script>";
             }
             else
             {
@@ -36,13 +35,51 @@
 
         public function get_Agentes()
         {
-            $consulta = "SELECT * FROM `rol` ORDER BY `id_rol`";
+            $consulta = "SELECT * FROM usuario WHERE fk_rol = 02 ORDER BY id_usuario";
             $resultado = $this->db->query($consulta);
             while ($valores = mysqli_fetch_array($resultado)) 
             {
                 $this->agentes[]=$valores;
             }
             return $this->agentes;
+        }
+        
+        public function set_caso($id)
+        {
+
+            $fk_reporte=$id;
+            $contraseña="CMA#".$id;
+            $estado=01;
+            $usuario=$_POST['nombreAgentes'];
+            $nombre=null;
+            $anotaciones=null;
+            $sql= $this->db->prepare("INSERT INTO caso_maltrato (fk_reporte,contraseña,fk_estado,fk_usuario,nombre,anotaciones) 
+                                    VALUES (?,?,?,?,?,?)");
+
+            $sql->bind_param('isiiss',$fk_reporte,$contraseña,$estado,$usuario,$nombre,$anotaciones);
+            
+            if($sql->execute())
+            {
+                echo "<script> alert('Caso agregado'); </script>";
+            }
+            else
+            {
+                echo "Falló la ejecución: (" . $sql->errno . ") " . $sql->error;
+            }
+        }
+        public function get_caso($id)
+        {
+            $consulta = $this->db->prepare("SELECT COUNT(*) FROM caso_maltrato WHERE fk_reporte = ?");
+            $consulta->bind_param('i',$id);
+            if($consulta->execute())
+            {
+            }
+            else
+            {
+                echo "Falló la ejecución: (" . $consulta->errno . ") " . $consulta->error;
+            }
+            $resultado = $consulta->get_result();
+            return $resultado;
         }
     }
 ?>

@@ -57,7 +57,7 @@
                   {
                 ?>
                 <tr class="text-center contenido" >
-                  <th name="Aver"><?php echo $registro[0]?></th>
+                  <th><?php echo $registro[0]?></th>
                   <th><?php echo $registro[1]?></th>
                   <th><?php echo $registro[2]?></th>
                   <th><?php echo $registro[3]?></th>

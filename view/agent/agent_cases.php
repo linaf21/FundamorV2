@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <?php
+     require_once("../../controller/casos_agente_controller.php");                                          
+  ?>
   <header></header>
 
   <section class="main" id="app">
@@ -42,18 +45,23 @@
                   <th scope="col">Fecha</th>
                   <th scope="col">Municipio</th>
                   <th scope="col">Dirección</th>
-                  <th scope="col">Detalle</th>    
                 </tr>
               </thead>
               <tbody>
-                <tr class="text-center contenido" v-for="register in registers">
-                  <th>{{ register.consecutivo }}</th>
-                  <th>{{ register.consecutivo }}</th>
-                  <th>{{ register.nombres }} {{ register.apellidos }}</th>
-                  <th>{{ register.fecha }}</th>
-                  <th>{{ register.proceso }}</th>
+              <?php
+                  foreach($matrizCasos as $registro)
+                  {
+                ?>
+                <tr class="text-center contenido" >
+                  <th name="Aver"><?php echo $registro[0]?></th>
+                  <th><?php echo $registro[1]?></th>
+                  <th><?php echo $registro[2]?></th>
+                  <th><?php echo $registro[3]?></th>
+                  </th>
                 </tr>
-              </tbody>
+                <?php
+                  }
+                ?>
             </table>
             <!-- Contenedor de los botones de navegacion -->
            <div class="contenedor-btns">

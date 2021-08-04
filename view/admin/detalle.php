@@ -17,7 +17,6 @@
         $id_reporte=($_GET['id_reporte']);
         $id=intval($id_reporte);
         require_once("../../controller/detalle_reporte_controller.php");
-        $variable=false;
     ?>
   <header></header>
     
@@ -247,7 +246,7 @@
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                                                             <button class="btn btn-primary" type="submit" id="submit_button" name="submit_button"  >Asignar</button>
                                                             <?php
-                                                                if($cantidadCasos[0]>0)
+                                                                if($cantidadCasos>0)
                                                                 {
                                                             ?>
                                                                     <script>

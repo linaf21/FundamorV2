@@ -78,7 +78,7 @@
             {
                 echo "Falló la ejecución: (" . $consulta->errno . ") " . $consulta->error;
             }
-            $resultado = $consulta->get_result();
+            $resultado = $consulta;
             return $resultado;
         }
     }

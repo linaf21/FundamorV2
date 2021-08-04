@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/estilos.css">
   <title>Detalle</title>
 </head>
-
 <body>
   <header></header>
 

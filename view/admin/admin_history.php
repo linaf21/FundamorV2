@@ -16,7 +16,7 @@
 
 <body>
   <?php
-     require_once("../../controller/historial_admin_controler.php");                                                       
+     require_once("../../controller/historial_admin_controler.php");                                          
   ?>
   <header></header>
 
@@ -32,7 +32,7 @@
         </div>
 
         <div class="col-md-12">
-            <form class = "form_search">  
+            <form class = "form_search" method="post">  
               <input class="input_form" type = "text" name = "busqueda" id = "busqueda" placeholder = "Buscar historial" required size="45">
             </form>
         </div>
@@ -56,15 +56,15 @@
                   foreach($matrizReportes as $registro)
                   {
                 ?>
-                <tr class="text-center contenido" v-for="register in registers">
-                  <th><?php echo $registro[0]?></th>
+                <tr class="text-center contenido" >
+                  <th name="Aver"><?php echo $registro[0]?></th>
                   <th><?php echo $registro[1]?></th>
                   <th><?php echo $registro[2]?></th>
                   <th><?php echo $registro[3]?></th>
                   <th><?php echo $registro[4]?></th>
                   <th class="botones">
-                    <a href="detalle.php" class="btn btn-link" >
-                      <i class="far fa-eye"></i>
+                  <a href="detalle.php?id_reporte=<?php echo $registro[0];?>" class="btn btn-link">
+                    <i class="far fa-eye"></i>
                   </a>
                   </th>
                 </tr>
@@ -73,18 +73,12 @@
                 ?>
               </tbody>
             </table>
-            <!-- Contenedor de los botones de navegacion -->
-            <div class="contenedor-btns">
-            <a class="boton detalle" href="detalle.php">Ver detalle</a>
-            </div>
           </div>
         </div>
       </div>
     </section>
 </section>
 
-  
-  
   <footer></footer>
 
   <!-- Vue.js 2.5.16 -->
@@ -97,7 +91,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="js/jquery.min.js"></script>
 
-  <script src="../../controller/admin_history.js"></script>
 
   <script src="js/util.js"></script>
 

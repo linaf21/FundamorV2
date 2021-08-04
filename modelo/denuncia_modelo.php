@@ -55,7 +55,6 @@
             
             if($sql->execute())
             {
-
                 echo "<script> alert('Reporte agregado'); </script>";
             }
             else

@@ -47,9 +47,13 @@
                         <!-- Contenedor de los botones de navegacion -->
                         <div class="contenedor-btns">
                             <a class="boton informacion" id="btn-informacion" href="#">Información</a>
-                            <a class="boton denunciar" href="view/user/denuncia.php">Denunciar</a>
-                            <a class="boton denunciar" href="view/admin/admin_users.php">Usuarios</a>
+                            <a class="boton denunciar" href="view/user/denuncia.php">Denunciar</a>                            
                         </div>
+                        <div class="contenedor-btns">
+                            <a class="boton denunciar" href="view/admin/admin_users.php">Usuarios</a>
+                            <a class="boton informacion" href="view/agent/agent_cases.php">Agente</a>
+                        </div>
+                        
                     </div>
 
                     <!-- Contenedor principal de la foto del header -->

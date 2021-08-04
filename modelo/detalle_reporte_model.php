@@ -2,12 +2,14 @@
     class detalle_reporte_model
     {
         private $db;
+        private $agentes;
         public function __construct()
         {
             require_once("conexion.php");
             $this->db=conexion::conexion();
 
             $this->reportes=array();
+            $this->agentes=array();
         }
         public function get_reporte($id)
         {
@@ -30,6 +32,17 @@
             }
             $resultado = $consulta->get_result()->fetch_assoc();
             return $resultado;
+        }
+
+        public function get_Agentes()
+        {
+            $consulta = "SELECT * FROM `rol` ORDER BY `id_rol`";
+            $resultado = $this->db->query($consulta);
+            while ($valores = mysqli_fetch_array($resultado)) 
+            {
+                $this->agentes[]=$valores;
+            }
+            return $this->agentes;
         }
     }
 ?>

@@ -193,7 +193,7 @@
                                                                 brindar
                                                                 bienestar al animal?</label>
                                                         
-                                                                <label for="message-text" name="hambre_sed" id="hambre_sed" class="form-control"><?php echo $reporte['bienestar_animal'];?></label
+                                                                <label for="message-text" name="hambre_sed" id="hambre_sed" class="form-control"><?php echo $reporte['bienestar_animal'];?></label>
                                                             </section>
                                                         </div>
                                                     </div>
@@ -225,14 +225,22 @@
                                             <div class="modal-body">
                                                 <form name="formularioUsuario"  method="post"
                                                     class="needs-validation contenido-formulario" novalidate>
-                                                        <!-- Fila del campo de nombres de los agentes -->
+                                                        <!-- Fila nombre de los agentes -->
                                                         <div class="form-row">
-                                                            <div class="col-12">
-                                                            <label for="nombre">Agentes</label>
-                                                            <input name = "nombres" type="text" class="form-control" id="nombres"
-                                                                placeholder="Nombre(s)" required>
-                                                            </div>
-                                                        </div>                              
+                                                            <!-- Tipo de documento -->
+                                                            <div class="col-md-12">
+                                                                <select v-model="newUser.document_type" class="custom-select"
+                                                                    id="nombreAgentes" name="nombreAgentes" required>
+                                                                    <option selected value="">Agentes</option>
+                                                                    <?php
+                                                                        foreach($matrizAgentes as $registro)
+                                                                        {
+                                                                            echo '<option value="'.$registro["id_tipo_documento"].'">'.$registro["descripcion"].'</option>';
+                                                                        } 
+                                                                    ?>
+                                                                </select>
+                                                            </div>     
+                                                        </div>                     
 
                                                         <!-- Fila de botones -->
                                                         <div class="form-row botones">
